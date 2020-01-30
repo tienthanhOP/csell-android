@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        fancy:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_follow_product"
+                style="@style/SF_M_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white_100"
+                android:paddingVertical="14dp"
+                android:text="@string/follow_product"
+                android:textAllCaps="false"
+                android:textColor="@color/text_title_product_product"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginHorizontal="@dimen/margin_horizontal"
+                android:background="@color/gray_50" />
+
+            <Button
+                android:id="@+id/btn_reup_product"
+                style="@style/SF_M_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white_100"
+                android:paddingVertical="14dp"
+                android:text="@string/reup_product"
+                android:textAllCaps="false"
+                android:textColor="@color/text_title_product_product" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        fancy:cardCornerRadius="10dp">
+
+        <Button
+            android:id="@+id/btn_cancel_dialog_choose"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/text_title_product_product" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

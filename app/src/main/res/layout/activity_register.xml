@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_register_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/bg_main"
+    tools:mContext="csell.com.vn.csell.views.account.activity.RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/frame_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btn_back_register"
+                style="@style/SF_M_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:drawableStart="@drawable/ic_keyboard_arrow_left_dark_light_24dp"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="@string/title_back_vn"
+                android:textColor="@color/dark_blue_100" />
+
+            <RelativeLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/dp_34"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SF_R_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:text="@string/new_to_csell"
+                        android:textColor="@color/light_blue_100" />
+
+                    <TextView
+                        style="@style/SF_R_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lets_create_an_account_and_join_with_us"
+                        android:textColor="@color/dark_blue_50" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_title"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:minHeight="@dimen/dp_50"
+                        android:textColorHint="@color/dark_blue_50"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edt_username"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                            android:hint="@string/username_"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textAutoComplete"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dp_14"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_blue_100" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout0"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:minHeight="@dimen/dp_60"
+                        android:textColorHint="@color/dark_blue_50">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edt_displayname"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/display_name_"
+                            android:imeActionId="6"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dp_14"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_blue_100" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout1"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:minHeight="@dimen/dp_60"
+                        android:textColorHint="@color/dark_blue_50"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edt_email"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email_"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dp_14"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_blue_100" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/textInputLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dp_60">
+
+                        <com.firebase.ui.auth.ui.phone.CountryListSpinner
+                            android:id="@+id/spinner_phone"
+                            android:layout_width="46dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/background_white_border_need"
+                            android:visibility="gone" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textInputLayoutPhone"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="true"
+                            android:textColorHint="@color/dark_blue_50">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edt_phone"
+                                style="@style/SF_R_16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phone_number_"
+                                android:imeActionId="6"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="number"
+                                android:maxLength="11"
+                                android:maxLines="1"
+                                android:paddingBottom="@dimen/dp_14"
+                                android:singleLine="true"
+                                android:textColor="@color/dark_blue_100" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout3"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:minHeight="@dimen/dp_60"
+                        android:textColorHint="@color/dark_blue_50">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edt_password"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password_"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dp_14"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_blue_100" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout4"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:minHeight="@dimen/dp_60"
+                        android:textColorHint="@color/dark_blue_50">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edt_repassword"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/enter_password_"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingBottom="14dp"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_blue_100" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/SF_R_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngành nghề" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/btn_car_job"
+                                style="@style/SF_B_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:background="@drawable/bg_border_note_green"
+                                android:gravity="center"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="18dp"
+                                android:text="Ô tô" />
+
+                            <TextView
+                                android:id="@+id/btn_bds_job"
+                                style="@style/SF_B_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/bg_border_note_green"
+                                android:gravity="center"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="18dp"
+                                android:text="Bất động sản" />
+
+                            <TextView
+                                android:id="@+id/btn_sim_job"
+                                style="@style/SF_B_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/bg_border_note_green"
+                                android:gravity="center"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="18dp"
+                                android:text="Sim số" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/textInputLayout5"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@color/white_100"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Spinner
+                            android:id="@+id/edt_chooseJobs"
+                            style="@style/SF_M_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginEnd="3dp"
+                            android:background="@drawable/ic_spinner_dropdown_no_bg"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/hint_career"
+                            android:textColor="@color/dark_blue_50" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="4dp"
+                            android:background="@color/gray_50" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_location"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/white_100"
+                        android:gravity="center"
+                        android:hint="@string/city"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Spinner
+                            android:id="@+id/spn_city"
+                            style="@style/SF_R_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:background="@drawable/ic_spinner_dropdown_no_bg"
+                            android:hint="@string/city"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_blue_50" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:background="@color/gray_50"
+                            android:paddingLeft="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_5" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/SF_B_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@+id/frame"
+                android:layout_marginHorizontal="@dimen/dp_34"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/background_btn_login"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="@color/white_100"
+                android:visibility="visible" />
+
+            <!-- footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@+id/btn_register"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dp_50"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@drawable/background_view_login" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SF_R_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|end"
+                        android:paddingEnd="5dp"
+                        android:text="@string/have_you_an_account_vn"
+                        android:textColor="@color/dark_blue_75" />
+
+                    <TextView
+                        android:id="@+id/txt_signin"
+                        style="@style/SF_B_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/dp_16"
+                        android:text="@string/login"
+                        android:textColor="@color/blue_100" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--</ScrollView>-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!-- frame_verrify -->
+    <ScrollView
+        android:id="@+id/frame_register_verify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dp_34"
+            android:paddingTop="70dp">
+
+            <LinearLayout
+                android:id="@+id/item_title_verify"
+                android:layout_width="@dimen/dp_250"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SF_R_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verify_your_phone"
+                    android:textColor="@color/light_blue_100" />
+
+                <TextView
+                    android:id="@+id/tv_noti"
+                    style="@style/SF_R_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_enter_6_digit_code_sent_to_your_registered_email"
+                    android:textColor="@color/dark_blue_50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_code_verify"
+                    style="@style/SF_M_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input"
+                    android:imeActionId="6"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue_100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Không nhận được mã xác nhận ?" />
+
+                <LinearLayout
+                    android:id="@+id/btn_resend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="@string/resend_token"
+                        android:textColor="@color/blue_100"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_count_downTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue_100"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_verify"
+                style="@style/SF_B_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_btn_login"
+                android:text="@string/confirm"
+                android:textAllCaps="true"
+                android:textColor="@color/white_100" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

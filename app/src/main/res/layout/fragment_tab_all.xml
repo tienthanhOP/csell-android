@@ -1,0 +1,77 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_all_tab"
+    android:name="csell.com.vn.csell.fragment.AllTabFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/loading_refreshing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_tab_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:alwaysDrawnWithCache="true"
+                android:animationCache="true"
+                android:background="@color/fui_transparent"
+                android:drawingCacheQuality="auto"
+                android:persistentDrawingCache="all"
+                android:splitMotionEvents="false"
+                android:visibility="visible" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/from_add_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.8"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/text_add_first"
+                android:textColor="@color/dark_blue_100"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtAddFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:drawableBottom="@drawable/ic_playlist_add_black_48dp"
+                android:gravity="center_horizontal"
+                android:text="@string/create_new"
+                android:textColor="@color/dark_blue_100" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</android.support.design.widget.CoordinatorLayout>

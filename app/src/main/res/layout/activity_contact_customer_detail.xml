@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_notification"
+        style="@style/SF_B_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/not_found_this_customer"
+        android:textColor="@color/red_100"
+        android:visibility="gone" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_detail_contract"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_100"
+            android:fitsSystemWindows="true"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    app:layout_collapseMode="parallax"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                    <!-- layout_info -->
+                    <LinearLayout
+                        android:id="@+id/layout_info"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@color/fui_transparent"
+                        android:orientation="vertical"
+                        app:layout_scrollFlags="scroll|enterAlways">
+
+                        <ImageView
+                            android:id="@+id/img_avatar_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_person" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_name_customer_detail"
+                        style="@style/SF_B_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:text="Dollie Carpenter"
+                        android:textColor="@color/text_name_detail_customer" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <include
+                        android:id="@+id/include"
+                        layout="@layout/toolbar_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentTop="true" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fui_transparent"
+                android:orientation="vertical">
+
+                <!-- layout_image_view -->
+                <LinearLayout
+
+                    android:id="@+id/layout_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_customer_detail"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@id/layout_info"
+                    android:background="@color/fui_transparent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:background="@drawable/ripple_button"
+                        android:id="@+id/img_sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bg_button_action_in_detail_contract"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_message_white_small" />
+
+                        <TextView
+                            style="@style/SF_M_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_send_message"
+                            android:textColor="@color/button_action_in_detail_customer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:background="@drawable/ripple_button"
+                        android:id="@+id/img_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bg_button_action_in_detail_contract"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_call_white" />
+
+                        <TextView
+                            style="@style/SF_M_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/call_now"
+                            android:textColor="@color/button_action_in_detail_customer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:background="@drawable/ripple_button"
+                        android:id="@+id/img_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bg_button_action_in_detail_contract"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_email_white" />
+
+                        <TextView
+                            style="@style/SF_M_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/send_gmail"
+                            android:textColor="@color/button_action_in_detail_customer" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout_customer_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/white_100"
+                    app:tabIndicatorColor="@color/green_main"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/green_main"
+                    app:tabTextAppearance="@style/SF_M_14"
+                    app:tabTextColor="@color/dark_blue_50" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_customer_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/img_date_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/icon_add_note"
+        app:backgroundTint="@color/green_main"
+        app:elevation="6dp"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+</RelativeLayout>

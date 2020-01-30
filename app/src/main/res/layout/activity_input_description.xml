@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:orientation="vertical"
+    tools:mContext="csell.com.vn.csell.views.product.activity.InputDescriptionActivity">
+
+    <include layout="@layout/toolbar_custom" />
+
+    <RelativeLayout
+        android:id="@+id/from_input_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_radius_input_description"
+            android:hint="@string/text_hint_input_description"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_100"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:maxLength="4000"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                android:scrollbars="vertical" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtCountCharacter"
+            style="@style/SF_R_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/txtError"
+            android:layout_alignTop="@id/txtError"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:text="0/4000 ký tự"
+            android:textColor="@color/dark_blue_25" />
+
+    </RelativeLayout>
+
+</LinearLayout>

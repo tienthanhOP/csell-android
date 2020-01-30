@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:mContext="csell.com.vn.csell.activity.AddMoreFeaturesAndPrivateContentActivity">
+
+
+    <ScrollView
+        android:id="@+id/from_private"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:paddingVertical="3dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_owner"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:completionThreshold="0"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/owner"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingVertical="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_input_create_product"
+                    android:textColorHint="@color/text_hint_input_create_product" />
+
+                <LinearLayout
+                    android:id="@+id/layout_click_dropdown"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgView3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginStart="16dp"
+                        android:padding="4dp"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/vector_arrow_timeline" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp">
+
+                <com.firebase.ui.auth.ui.phone.CountryListSpinner
+                    android:id="@+id/spinner_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/background_white_border_need"
+                    android:maxWidth="55dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_ownerPhone"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:digits="0123456789"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_input_create_product"
+                    android:textColorHint="@color/text_hint_input_create_product" />
+
+                <TextView
+                    android:id="@+id/txtCountCharacter"
+                    style="@style/SF_R_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:text="0/11"
+                    android:textColor="@color/dark_blue_25" />
+            </RelativeLayout>
+            <!-- Layout price -->
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="2"
+                    android:paddingVertical="3dp">
+
+                    <EditText
+                        android:id="@+id/edt_price_capital"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:hint="@string/cost_optional"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_input_create_product"
+                        android:textColorHint="@color/text_hint_input_create_product" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:paddingVertical="3dp">
+
+                    <Spinner
+                        android:id="@+id/spn_currency_info"
+                        style="@style/SF_R_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        tools:ignore="RtlCompat" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_owner_note"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:gravity="top"
+                    android:hint="@string/note"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:textColor="@color/text_input_create_product"
+                    android:textColorHint="@color/text_hint_input_create_product" />
+
+                <TextView
+                    android:id="@+id/txtCountCharacterNote"
+                    style="@style/SF_R_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="0/200 ký tự"
+                    android:textColor="@color/text_hint_input_create_product" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_private_info"
+                style="@style/SF_R_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@color/white_95"
+                android:gravity="start"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/txt_info_warning_private_mode"
+                android:textColor="@color/text_title_properties" />
+
+            <TextView
+                android:id="@+id/txt_HDSD"
+                style="@style/SF_B_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_95"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="16dp"
+                android:text="@string/view_tutorial"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_main" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SF_B_15"
+            android:id="@+id/txtNext"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:background="@color/button_next_create_product"
+            android:gravity="center"
+            android:text="@string/continue_"
+            android:textAllCaps="true"
+            android:textColor="@color/white_100" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

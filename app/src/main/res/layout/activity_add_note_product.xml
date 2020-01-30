@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:orientation="vertical"
+    tools:mContext="csell.com.vn.csell.views.note.activity.AddNoteProductActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_title_note"
+                android:textColorHint="@color/text_hint_add_note"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/edt_note_title"
+                    style="@style/SF_M_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="start"
+                    android:inputType="textPersonName"
+                    android:lines="2"
+                    android:maxLength="100"
+                    android:maxLines="2"
+                    android:paddingBottom="18dp"
+                    android:textColor="@color/text_add_note" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_count_title"
+                style="@style/SF_R_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="0/100"
+                android:textColor="@color/text_hint_add_note"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til1" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_count_title">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/SF_M_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/preview_before"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_hint_add_note" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/layout_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/background_blue_alpha_50_border"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="11dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/icon_date_blue" />
+
+                            <TextView
+                                android:id="@+id/tv_set_date_note"
+                                style="@style/SF_M_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="@string/day"
+                                android:textColor="@color/text_add_note" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/layout_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/background_blue_alpha_50_border"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp">
+
+                            <ImageView
+                                android:layout_width="11dp"
+                                android:layout_height="11dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_access_time_note_24dp" />
+
+                            <TextView
+                                android:id="@+id/tv_set_time_note"
+                                style="@style/SF_M_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="@string/hour"
+                                android:textColor="@color/text_add_note" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_remind"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:background="@drawable/background_blue_alpha_50_border"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingTop="2dp"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_notifications_blue" />
+
+                            <EditText
+                                android:id="@+id/edt_set_alarm"
+                                style="@style/SF_M_14"
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:background="@color/white_background_100"
+                                android:gravity="center"
+                                android:hint="60"
+                                android:inputType="time"
+                                android:maxLength="3"
+                                android:textColor="@color/text_add_note"
+                                android:textColorHint="@color/text_hint_add_note"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_selectCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/customer"
+                    android:textColorHint="@color/text_add_note">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/tv_selectCustomer"
+                        style="@style/SF_M_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:completionThreshold="0"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingBottom="18dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_add_note"
+                        android:textColorHint="@color/text_add_note" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_selectProduct"
+                style="@style/SF_M_16"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/border_line_bottom_spinner"
+                android:gravity="center_vertical"
+                android:text="@string/choose_product"
+                android:textColor="@color/text_add_note"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_selectCustomer" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ef_grey"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tv_selectProduct" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/content"
+                android:textColorHint="@color/text_hint_add_note"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_selectProduct">
+
+                <EditText
+                    android:id="@+id/edt_description_note"
+                    style="@style/SF_M_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/text_add_note" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_count"
+                style="@style/SF_R_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="0/200"
+                android:textColor="@color/text_add_note"
+                android:textColorHint="@color/text_hint_add_note"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til2" />
+
+            <ImageView
+                android:id="@+id/imgView2"
+                android:layout_width="18dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:paddingTop="10dp"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_selectProduct"
+                app:layout_constraintEnd_toEndOf="@+id/tv_selectProduct"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_selectProduct"
+                app:layout_constraintTop_toTopOf="@+id/tv_selectProduct"
+                app:srcCompat="@drawable/vector_arrow_timeline" />
+
+
+            <ImageView
+                android:id="@+id/imgView3"
+                android:layout_width="18dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_selectCustomer"
+                app:layout_constraintEnd_toEndOf="@+id/layout_selectCustomer"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/layout_selectCustomer"
+                app:layout_constraintTop_toTopOf="@+id/layout_selectCustomer"
+                app:srcCompat="@drawable/vector_arrow_timeline" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_delete_note"
+        style="@style/SF_M_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="@string/delete_note"
+        android:textAllCaps="false"
+        android:textColor="@color/red_100"
+        android:visibility="gone" />
+
+</LinearLayout>

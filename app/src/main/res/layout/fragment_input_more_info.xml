@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_properties"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/from_show_guid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <CheckBox
+            android:id="@+id/ckbInputOwnerInfo"
+            style="@style/SF_M_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_choose_image"
+            android:text="@string/text_input_owner_info"
+            android:textColor="@color/text_choose_image" />
+
+        <TextView
+            android:id="@+id/txtShowGuidePrivateInfo"
+            style="@style/SF_R_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_warning_private"
+            android:drawablePadding="5dp"
+            android:paddingStart="8dp"
+            android:text="@string/text_access_private_info"
+            android:textColor="@color/text_note_owner" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNext"
+        style="@style/SF_B_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="10dp"
+        android:background="@color/button_next_create_product"
+        android:gravity="center"
+        android:text="@string/continue_"
+        android:textAllCaps="true"
+        android:textColor="@color/white_100" />
+
+</LinearLayout>

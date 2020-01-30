@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="246dp"
+            android:layout_height="246dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/oval_disconnect" />
+
+            <ImageView
+                android:id="@+id/earth_disconnect"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/earth_disconnect" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/earth_disconnect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-44dp"
+            android:src="@drawable/lightning_disconnect" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-58dp"
+            android:src="@drawable/phone_disconnect" />
+
+        <TextView
+            style="@style/SF_B_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-75dp"
+            android:text="Oops!"
+            android:textColor="#1E232F" />
+
+        <TextView
+            style="@style/SF_R_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/error_connect"
+            android:textColor="#1E232F" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/retry_connect"
+        style="@style/SF_B_15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/background_btn_login"
+        android:text="@string/retry"
+        android:textColor="@color/white_100" />
+
+</RelativeLayout>

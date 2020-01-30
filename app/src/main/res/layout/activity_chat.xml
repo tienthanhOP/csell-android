@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:mContext="csell.com.vn.csell.views.friend.activity.ChatActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/toolbar_custom_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/include_toolbar"
+        android:background="#efeff1" />
+
+    <RelativeLayout
+        android:id="@+id/layout_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:background="@color/white_100"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/box_chat"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/box_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/layout_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/margin_left_16dp"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edtContent"
+                        style="@style/SF_R_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_input_chat"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:hint="@string/title_input_message"
+                        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/text_send_in_edit_text"
+                        android:textColorHint="@color/text_hint_send_in_edit_text" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btnSend"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingVertical="12dp"
+                    android:src="@drawable/icon_send_message" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_accept_deny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="17dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_accept"
+                    style="@style/SF_B_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="@dimen/margin_horizontal_16dp"
+                    android:background="@drawable/bg_button_message_pending"
+                    android:gravity="center"
+                    android:text="@string/title_accept"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white_100" />
+
+                <TextView
+                    android:id="@+id/tv_deny"
+                    style="@style/SF_B_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/title_deny"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue_50" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/layout_product"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/background_white_border"
+                android:visibility="gone">
+
+                <ImageView
+                    android:padding="1dp"
+                    android:id="@+id/img_product"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/noimage" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginVertical="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        style="@style/SF_M_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Mercedes-Benz E250 AMG Limited"
+                        android:textColor="@color/text_title_product_chat" />
+
+                    <TextView
+                        android:id="@+id/tv_product_description"
+                        style="@style/SF_R_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Cần bán xe merc siêu lướt"
+                        android:textColor="@color/text_content_product_chat" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_remove"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_cancel_black"
+                    app:civ_fill_color="@color/white_100" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_loadmore_message"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

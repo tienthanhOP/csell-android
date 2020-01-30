@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:angle="135"
+                android:endColor="#FF2BFCC1"
+                android:startColor="#FF34C0D3"
+                android:type="linear" />
+            <size
+                android:width="16dp"
+                android:height="16dp" />
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_add_black"
+        android:width="8dp" android:height="8dp"
+        android:gravity="center">
+    </item>
+
+</layer-list>

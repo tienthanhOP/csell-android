@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <!--<gradient-->
+            <!--android:angle="135"-->
+            <!--android:endColor="#FF2BFCC1"-->
+            <!--android:startColor="#FF34C0D3"-->
+            <!--android:type="linear" />-->
+            <solid android:color="@color/add_more_field_in_add_edit_contract" />
+            <size
+                android:width="14dp"
+                android:height="14dp" />
+        </shape>
+    </item>
+
+    <item
+        android:width="8dp"
+        android:height="8dp"
+        android:drawable="@drawable/ic_add_black"
+        android:gravity="center" />
+
+</layer-list>

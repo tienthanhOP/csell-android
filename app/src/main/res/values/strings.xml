@@ -1,0 +1,563 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CSELL</string>
+    <string name="product">Sản phẩm</string>
+    <string name="customer">Khách hàng</string>
+    <string name="social">Cộng đồng</string>
+    <string name="friend">Bạn bè</string>
+    <string name="notification">Thông báo</string>
+    <string name="add_product">Thêm sản phẩm</string>
+    <string name="delete_product">Xóa sản phẩm</string>
+    <string name="edit_product">Sửa sản phẩm</string>
+    <string name="no_product">Chưa có sản phẩm.</string>
+    <string name="choose_product">Chọn sản phẩm</string>
+    <string name="info_product">Thông tin sản phẩm</string>
+    <string name="post_product">Đăng sản phẩm</string>
+    <string name="un_follow_product">Bỏ theo dõi sản phẩm</string>
+    <string name="follow_product">Theo dõi sản phẩm</string>
+    <string name="filter_product">Lọc sản phẩm</string>
+    <string name="reup_product">Re-Up sản phẩm</string>
+    <string name="product_interest">Sản phẩm quan tâm</string>
+    <string name="text_done_created_product_to_csell">Bạn có muốn sản phẩm này được hiển thị trên cộng đồng CSELL?</string>
+    <string name="setting">Cài đặt</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="all">Tất cả</string>
+    <string name="add_note">Thêm ghi chú</string>
+    <string name="enter_price_or_leave_blank">Nhập giá hoặc để trống</string>
+    <string name="mileage_">Số Km:</string>
+    <string name="address_">Địa chỉ:</string>
+    <string name="add_private_content_with_">Thêm nội dung riêng tư với…</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="owner">Chủ sở hữu</string>
+    <string name="cost_optional">Giá vốn(tùy chọn)</string>
+    <string name="done">Xong</string>
+    <string name="txt_info_warning_private_mode">*Lưu ý:
+Nhằm bảo mật thông tin tốt hơn, các thông tin về chủ sở hữu sẽ chỉ hiển thị khi chế độ cá nhân được bật.</string>
+    <string name="add_details_">Thêm thông tin chi tiết:</string>
+    <string name="search_">Tìm kiếm…</string>
+    <string name="history_notes">Lịch sử ghi chú</string>
+    <string name="newfeed">Tin đăng</string>
+    <string name="information">Thông tin</string>
+    <string name="title_hashtag">Hashtag</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="Address">Địa chỉ</string>
+    <string name="dob">Ngày sinh</string>
+    <string name="jobs">Nghề nghiệp</string>
+    <string name="need">Nhu cầu</string>
+    <string name="enter_description">Nhập mô tả</string>
+    <string name="customer_name">Tên khách hàng</string>
+    <string name="other_phone_numbers">Số điện thoại khác</string>
+    <string name="hashtag_optional">Hashtag(tùy chọn)</string>
+    <string name="dob_">Ngày sinh:</string>
+    <string name="add_customer">Thêm khách hàng</string>
+    <string name="icon_add" translatable="false">&#xf0fe;</string>
+    <string name="icon_back" translatable="false">&#xf104;</string>
+    <string name="icon_message" translatable="false">&#xf075;</string>
+    <string name="icon_email" translatable="false">&#xf0e0;</string>
+    <string name="icon_phone" translatable="false">&#xf095;</string>
+    <string name="please_enter_full_name">Vui lòng nhập họ tên</string>
+    <string name="customer_does_not_have_email">Khách hàng không có địa chỉ email</string>
+    <string name="edit_note">Sửa ghi chú</string>
+    <string name="select_customer">Chọn khách hàng</string>
+    <string name="set_notification_schedule">Đặt lịch thông báo</string>
+    <string name="preview_before">Nhắc trước (phút):</string>
+    <string name="enter_title_note">Nhập tiêu đề ghi chú</string>
+    <string name="detail">Chi tiết</string>
+    <string name="update_information">Cập nhật thông tin</string>
+    <string name="delete_customer">Xóa khách hàng</string>
+    <string name="revoke">Bỏ</string>
+    <string name="do_you_want_to_delete_this_customer">Bạn có muốn xóa khách hàng này không?</string>
+    <string name="manage_friends">Quản lý bạn bè</string>
+    <string name="agree">Đồng ý</string>
+    <string name="friend_request">Lời mời kết bạn</string>
+    <string name="enter_to_search_for_a_friend">Nhập tên, số điện thoại \n hoặc địa chỉ email để tìm kiếm bạn bè</string>
+    <string name="already_requested">Đã yêu cầu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="username_or_email">Tên đăng nhập hoặc email</string>
+    <string name="password_">Mật khẩu *</string>
+    <string name="email_address_incorrect">Địa chỉ email không đúng</string>
+    <string name="password_contains_at_least_6_characters">Mật khẩu chứa tối thiểu 6 kí tự!</string>
+    <string name="incorrect_password">Mật khẩu không đúng</string>
+    <string name="this_field_required">Trường này bắt buộc</string>
+    <string name="loading_">Đang tải dữ liệu…</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="phone_number_">Số điện thoại *</string>
+    <string name="email_">Email *</string>
+    <string name="display_name_">Tên hiển thị *</string>
+    <string name="enter_your_registered_account">Nhập số điện thoại đăng kí của bạn</string>
+    <string name="verification_codes">Mã xác thực</string>
+    <string name="enter_password_">Nhập lại mật khẩu *</string>
+    <string name="authenticate_new_password">Xác thực mật khẩu mới</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="register">Đăng ký</string>
+    <string name="have_you_an_account_vn">Bạn đã có tài khoản?</string>
+    <string name="register_now">Đăng ký ngay</string>
+    <string name="username_">Tên đăng nhập *</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="confirm">Xác thực</string>
+    <string name="submit">Gửi đi</string>
+    <string name="resend_token">Gửi lại mã</string>
+    <string name="please_do_not_leave_it_blank">Vui lòng không để trống!</string>
+    <string name="invalid_phone_number">Số điện thoại không hợp lệ!</string>
+    <string name="invalid_email">Email không hợp lệ!</string>
+    <string name="passwords_do_not_match">Mật khẩu không khớp nhau</string>
+    <string name="selection_job">Lựa chọn ngành nghề</string>
+    <string name="new_notification">Thông báo mới</string>
+    <string name="write_comment_">Viết bình luận…</string>
+    <string name="description_">Mô tả *</string>
+    <string name="continue_">Tiếp tục</string>
+
+
+    <string name="get_new_password">Nhận mật khẩu mới</string>
+    <string name="acreage">Diện tích</string>
+    <string name="direction">Hướng chính</string>
+    <string name="bedroom">Phòng ngủ</string>
+    <string name="bathroom">Phòng tắm</string>
+    <string name="year_of_manufacture">Năm sản xuất</string>
+    <string name="status">Tình trạng</string>
+    <string name="city">Tỉnh, thành</string>
+    <string name="personal">Cá nhân</string>
+
+    <string name="icon_drawer" translatable="false">&#xf0c9;</string>
+    <string name="icon_sort" translatable="false">&#xf15d;</string>
+    <string name="icon_filter" translatable="false">&#xf0b0;</string>
+    <string name="font_icon_private" translatable="false">&#xf023;</string>
+    <string name="font_icon_toolbar_right" translatable="false">&#xf142;</string>
+    <string name="font_icon_toolbar_right_edit" translatable="false">&#xf044;</string>
+    <string name="font_icon_public" translatable="false">&#xf0ac;</string>
+
+    <string name="path_password_eye_mask_visible" translatable="false" tools:ignore="PrivateResource">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_strike_through" translatable="false" tools:ignore="PrivateResource">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye" translatable="false" tools:ignore="PrivateResource">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_strike_through" translatable="false" tools:ignore="PrivateResource">M3.27,4.27 L19.74,20.74</string>
+
+    <string name="facebook_app_id" translatable="false">1412111772227959</string>
+    <!--<string name="fb_login_protocol_scheme">fb298357774028797</string>-->
+    <string name="fb_login_protocol_scheme" translatable="false">fb1412111772227959</string>
+    <string name="web_client_id" translatable="false">846118602177-dulh69grt03h505m90hm7fd864o2vv3v.apps.googleusercontent.com</string>
+    <string name="defaulImageUrl" translatable="false">http://cdn.csell.vn/categories/default.jpg</string>
+
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="false">News</string>
+
+    <string name="color">Màu sắc</string>
+    <string name="note">Ghi chú</string>
+    <string name="contact">Liên hệ</string>
+    <string name="description_can_not_empty">Mô tả không được để trống</string>
+    <string name="Description_at_least_10_words">Mô tả phải nhập ít nhất 10 từ</string>
+    <string name="see_more">Xem thêm</string>
+    <string name="comment">Bình luận</string>
+    <string name="like">Thích</string>
+    <string name="share">Chia sẻ</string>
+    <string name="find_project">Tìm tên dự án</string>
+    <string name="customer_not_found">Không tìm thấy khách hàng.</string>
+    <string name="about">khoảng</string>
+    <string name="district">Quận, huyện</string>
+    <string name="address__">Địa chỉ *</string>
+    <string name="please_enter_itle">Vui lòng nhập tiêu đề</string>
+    <string name="today">Hôm nay</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="delete_note">Xóa Note</string>
+    <string name="create_group">Tạo nhóm mới</string>
+    <string name="find_friend_by_phone_email">Nhập số điện thoại hoặc email để tìm kiếm bạn bè</string>
+    <string name="customers_in_this_group">Khách hàng trong nhóm này</string>
+    <string name="edit_group">Chỉnh sửa nhóm</string>
+    <string name="csell_password_forgotten_password">CSELL - Mã xác nhận quên mật khẩu</string>
+    <string name="input">Nhập</string>
+    <string name="add_private_content">Nội dung riêng tư</string>
+    <string name="owner_information">Thông tin chủ sở hữu</string>
+    <string name="cost_of_capital">Giá vốn</string>
+    <string name="information_does_not_exist">Thông tin không tồn tại</string>
+    <string name="text_list_sim_month_update_title">Danh sách sim cập nhập ngày</string>
+    <string name="text_info_note">Thông tin riêng tư</string>
+    <string name="text_input_owner_info">Tôi muốn nhập thông tin chủ sở hữu</string>
+    <string name="text_access_private_info">Chỉ bạn mới có quyền truy cập. Tìm hiểu ngay</string>
+    <string name="text_last_mess_sender">Bạn</string>
+    <string name="title_input_password">Xác thực mật khẩu bằng vân tay</string>
+    <string name="please_input_password">Vui lòng nhập mật khẩu</string>
+    <string name="verify_password">Xác thực mật khẩu</string>
+    <string name="title_scan_password">Đặt ngón tay của bạn vào chỗ quét vân tay</string>
+    <string name="input_password">Nhập mật khẩu</string>
+    <string name="verify_scanner_fingerprint">Xác thực vân tay</string>
+    <string name="verify_fingerprint">Đăng nhập bằng vân tay</string>
+    <string name="hint_product_name">Nhập tiêu đề * (100 ký tự)</string>
+    <string name="text_create_project">Dự án bạn đang tìm chưa có. Bạn có muốn thêm dự án mới?</string>
+    <string name="text_btn_new_project">Thêm dự án mới</string>
+    <string name="title_public">Công khai</string>
+    <string name="title_back_vn">Trở lại</string>
+    <string name="title_add_note_today">Thêm ghi chú công việc</string>
+    <string name="title_toolbar_done_vn">Hoàn tất</string>
+    <string name="title_share_social">Thêm chia sẻ của bạn với cộng đồng…</string>
+    <string name="title_result">Kết quả</string>
+    <string name="input_result_note">Cập nhật kết quả cuộc gặp</string>
+    <string name="text_hint_add_project">Nhập tên dự án *</string>
+    <string name="text_toolbar_title_add_project">Thêm dự án mới</string>
+    <string name="text_error_input_project">Vui lòng nhập tên dự án</string>
+    <string name="title_post_social">Bạn muốn chia sẻ điều gì?</string>
+    <string name="title_share_new_post">Đăng sản phẩm mới</string>
+    <string name="title_search_post">Tìm kiếm sản phẩm</string>
+    <string name="title_add_group">Tạo nhóm khách hàng mới</string>
+    <string name="title_list_group">Danh sách nhóm</string>
+    <string name="title_send_message">Nhắn tin</string>
+    <string name="title_only_me">Chỉ mình tôi</string>
+    <string name="text_max_speed_ometer">trên 150.000 Km</string>
+    <string name="text_location">Khu vực:</string>
+    <string name="icon_add_friend" translatable="false">&#xf234;</string>
+    <string name="title_send_request">Đã gửi kết bạn</string>
+    <string name="text_body_liked">đã thích</string>
+    <string name="text_body_of_you">của bạn</string>
+    <string name="text_body_shared_note_private">đã chia sẻ nội dung riêng tư cho bạn từ</string>
+    <string name="title_pending_message">Tin nhắn chờ</string>
+    <string name="title_deny">Từ chối</string>
+    <string name="title_accept">Chấp nhận</string>
+    <string name="text_body_in">trong</string>
+    <string name="text_reply_comment">Trả lời</string>
+    <string name="text_body_comment"> đã bình luận trong</string>
+    <string name="text_body_reply_comment"> đã trả lời bình luận của bạn trong</string>
+    <string name="title_input_current_password">Nhập mật khẩu hiện tại</string>
+    <string name="title_confirm_password">Xác nhận mật khẩu mới</string>
+    <string name="post_share">Đăng chia sẻ</string>
+    <string name="edit_info">Sửa thông tin</string>
+    <string name="error_password">Mật khẩu không khớp</string>
+    <string name="title_change_password">Đổi mật khẩu</string>
+    <string name="title_new_avatar">Chụp ảnh đại diện mới</string>
+    <string name="title_choose_gallery">Chọn từ thư viện ảnh</string>
+    <string name="title_show_avatar">Xem ảnh đại diện</string>
+    <string name="title_remove_avatar">Xóa ảnh đại diện</string>
+    <string name="title_share_post">Đăng tin</string>
+    <string name="title_tab_message">Tin nhắn</string>
+    <string name="title_vn">Tiêu đề</string>
+    <string name="title_description">Mô tả</string>
+    <string name="content">Nội dung</string>
+    <string name="text_error_empty">Vui lòng nhập đầy đủ!</string>
+    <string name="text_error_length_password">Mật khẩu phải nhiều hơn 5 kí tự!</string>
+    <string name="text_error_confirm_password">Mật khẩu không khớp!</string>
+    <string name="update_password_success">Cập nhật mật khẩu thành công!</string>
+    <string name="hint_career">Lĩnh vực hoạt động</string>
+    <string name="text_error_job">Vui lòng chọn lĩnh vực hoạt động!</string>
+    <string name="text_error_city">Vui lòng chọn tỉnh, thành!</string>
+    <string name="text_count_message_pending">tin nhắn đang chờ</string>
+    <string name="text_you_have">Bạn có</string>
+    <string name="text_title_notification_view">Bạn nhận được thông báo</string>
+    <string name="text_body_person_add_to_you">người gửi lời mời kết bạn</string>
+    <string name="text_info_project">Thông tin dự án</string>
+    <string name="text_intro">Giới thiệu</string>
+    <string name="text_field_project_investor">Chủ đầu tư:</string>
+    <string name="text_project_total_acreage_build">Tổng diện tích:</string>
+    <string name="text_project_acreage_build">Diện tích xây dựng:</string>
+    <string name="text_project_price">Giá bán:</string>
+    <string name="text_project_scale">Quy mô dự án:</string>
+    <string name="title_user_info">Thông tin tài khoản</string>
+    <string name="title_active_fingerprint">Kích hoạt đăng nhập bằng vân tay</string>
+    <string name="title_setup_noti">Cài đặt thông báo</string>
+    <string name="title_language">Ngôn ngữ</string>
+    <string name="title_introduce">Giới thiệu</string>
+    <string name="day">Ngày</string>
+    <string name="hour">Giờ</string>
+    <string name="text_error_note_content">Vui lòng nhập nội dung ghi chú.</string>
+    <string name="title_apply">Áp dụng</string>
+    <string name="title_no_filter">Bỏ lọc</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="choose_category">Chọn ngành</string>
+    <string name="text_project_type_development">Loại hình phát triển:</string>
+
+    <string name="bg_sim_url_1" translatable="false">https://res.cloudinary.com/csellglobal-com/image/upload/v1529549800/background/3.jpg</string>
+    <string name="bg_sim_url_2" translatable="false">https://res.cloudinary.com/csellglobal-com/image/upload/v1529549800/background/4.jpg</string>
+    <string name="bg_sim_url_3" translatable="false">https://res.cloudinary.com/csellglobal-com/image/upload/v1529549800/background/5.jpg</string>
+    <string name="bg_sim_url_4" translatable="false">https://res.cloudinary.com/csellglobal-com/image/upload/v1529549800/background/2.jpg</string>
+    <string name="bg_sim_url_5" translatable="false">https://res.cloudinary.com/csellglobal-com/image/upload/v1529549800/background/1.jpg</string>
+
+    <string name="description_empty_post">Nội dung…</string>
+    <string name="body_fbid_notification_new">Bạn có thông báo mới, mở ứng dụng để xem</string>
+    <string name="description_update_info">Vui lòng bổ sung các thông tin còn thiếu, điều này sẽ giúp CSELL xác nhận danh tính của bạn.</string>
+    <string name="title_update_info">Bổ sung thông tin</string>
+    <string name="text_error_existed_phone">Số điện thoại này đã tồn tại</string>
+    <string name="text_error_existed_email">Email này đã tồn tại</string>
+    <string name="text_error_existed_username">Tên tài khoản này đã tồn tại</string>
+    <string name="title_import_phone_book">Nhập từ Danh bạ</string>
+    <string name="create_new">Tạo mới</string>
+    <string name="text_error_group_no_phone">Các khách hàng chưa có Số điện thoại!</string>
+
+    <string name="Samsung" translatable="false">Samsung</string>
+    <string name="type_intent_sms" translatable="false">vnd.android-dir/mms-sms</string>
+    <string name="address" translatable="false">address</string>
+    <string name="sms_body" translatable="false">sms_body</string>
+    <string name="action" translatable="false">Action</string>
+    <string name="type_intent_mail" translatable="false">message/rfc822</string>
+
+
+    <string name="text_error_group_no_email">Các khách hàng chưa có địa chỉ Email!</string>
+    <string name="text_error_email_failed">Lỗi gửi email, vui lòng thử lại!</string>
+    <string name="text_error_group_member">Chọn ít nhất 1 khách hàng!</string>
+    <string name="text_error_input_group_name">Nhập tên nhóm!</string>
+    <string name="text_success_save_group">Lưu nhóm thành công!</string>
+    <string name="text_success_add_customer">Thêm khách hàng thành công!</string>
+    <string name="text_error_invalid_email">Email không hợp lệ</string>
+    <string name="text_success_save_customer">Lưu khách hàng thành công!</string>
+    <string name="title_choose_dob">Chọn ngày sinh</string>
+    <string name="text_error_owner_no_phone">Chủ sản phẩm không có số điện thoại!</string>
+    <string name="text_error_follow">Bạn không thể Follow sản phẩm của chính mình!</string>
+    <string name="text_error_reup">Bạn không thể Re-Up sản phẩm của chính mình!</string>
+    <string name="language_vn">Tiếng Việt</string>
+    <string name="language_en">English</string>
+    <string name="language_fr">Français</string>
+    <string name="language_ko">한국어</string>
+    <string name="text_preview_images">Xem ảnh</string>
+    <string name="text_note_private_send_to">Gửi nội dung riêng tư tới</string>
+    <string name="text_edit_note_private">Chỉnh sửa</string>
+    <string name="text_and">và</string>
+    <string name="text_with_persons_orther">người khác</string>
+    <string name="new_to_csell">Bạn chưa sử dụng Csell?</string>
+    <string name="verify_your_email">Xác thực email của bạn,</string>
+    <string name="verify_your_phone">Xác thực số điện thoại của bạn,</string>
+    <string name="please_enter_6_digit_code_sent_to_your_registered_email">Vui lòng nhập mã gồm 6 chữ số được gửi đến số điện thoại (******%1$s) đã đăng ký của bạn</string>
+    <string name="lets_create_an_account_and_join_with_us">hãy tạo một tài khoản và tham gia với chúng tôi</string>
+    <string name="title_work">Lĩnh vực hoạt động</string>
+    <string name="text_error_content_note_private">Vui lòng nhập nội dung riêng tư</string>
+    <string name="text_error_friend_note_private">Vui lòng chọn bạn bè để chia sẻ nội dung riêng tư</string>
+    <string name="title_input_message">Viết tin nhắn</string>
+    <string name="text_error_input_friend_no_phone">Bạn bè chưa có số điện thoại!</string>
+    <string name="text_number_of_images">Số ảnh </string>
+    <string name="title_name_group">Đặt tên cho nhóm</string>
+    <string name="text_error_sms_failed">Lỗi gửi SMS, vui lòng thử lại</string>
+    <string name="hint_email_another">Email khác</string>
+    <string name="title_manage_group">Quản lý nhóm</string>
+    <string name="add_all">Thêm toàn bộ</string>
+    <string name="follow_user">Theo dõi</string>
+    <string name="following">Đang theo dõi</string>
+    <string name="call_now">Gọi ngay</string>
+    <string name="text_count_people">người</string>
+    <string name="title_deny_request">Xóa lời mời</string>
+    <string name="loading_image">Hình ảnh đang được xử lý, vui lòng chờ trong giây lát</string>
+    <string name="input_price">Nhập giá</string>
+    <string name="text_error_price">Giá trị không hợp lệ</string>
+    <string name="text_success_save_result_note">Cập nhật kết quả thành công!</string>
+    <string name="text_error_empty_result_note">Nhập kết quả cuộc gặp để lưu!</string>
+    <string name="text_error_enogh_image">Số ảnh đã đủ!</string>
+    <string name="text_reply_to">Trả lời tới</string>
+    <string name="input_your_comment">Thêm bình luận của bạn…</string>
+    <string name="title_add_note_private">Sản phẩm này chưa có nội dung riêng tư</string>
+    <string name="text_error_find_friend">Không tìm thấy bạn bè!</string>
+    <string name="title_find">Tìm</string>
+    <string name="text_add_first">Bạn chưa có sản phẩm</string>
+    <string name="text_show_comment_of_friend">Bạn chỉ xem được bình luận của bạn bè trong danh bạ</string>
+    <string name="alert_title_deleted_avatar">Xóa Avatar</string>
+    <string name="alert_message_deleted_avatar">Bạn có muốn xóa Avatar không?</string>
+    <string name="text_success_update_user">Cập nhật tài khoản thành công!</string>
+    <string name="alert_message_deleted_group">Bạn có muốn xóa nhóm không?</string>
+    <string name="alert_message_remove_request">Bạn có muốn hủy lời mời kết bạn?</string>
+    <string name="alert_title_remove_request">Hủy lời mời kết bạn</string>
+    <string name="text_error_existed_account">Tài khoản này đã tồn tại!</string>
+    <string name="text_error_invalid_captcha">Mã xác thực không hợp lệ!</string>
+    <string name="text_error_empty_code">Bạn phải nhập mã xác thực!</string>
+    <string name="message_code">Quý khách hàng vui lòng nhập mã code dưới để xác nhận thay đổi mật khẩu,\n\n</string>
+    <string name="text_success_sent_verify_code">Mã xác nhận đã được gửi đến email của quý khách!</string>
+    <string name="text_error_unknown">Có lỗi xảy ra vui lòng thử lại!</string>
+    <string name="text_success_update_password">Đổi mật khẩu thành công!</string>
+    <string name="title_job_calendar">Lịch làm việc</string>
+    <string name="text_error_length_code">Mã xác thực phải đủ 6 kí tự!</string>
+    <string name="text_error_duplicate_phone">Số điện thoại không được trùng nhau!</string>
+    <string name="text_error_not_connect_server_api">Không thể kết nối tới server</string>
+    <string name="title_friend_general">bạn chung</string>
+    <string name="alert_message_unfriend">Bạn có muốn xóa người này khỏi danh sách bạn bè không?</string>
+    <string name="alert_title_unfriend">Hủy kết bạn</string>
+    <string name="alert_message_unfollow">Bạn có muốn bỏ theo dõi người này?</string>
+    <string name="alert_title_unfollow">Bỏ theo dõi</string>
+    <string name="session_expired">Phiên sử dụng hết hạn</string>
+    <string name="text_continue_edit">Tiếp</string>
+    <string name="text_edit_info_owner">Chỉnh sửa</string>
+    <string name="text_add_owner_info">Bổ sung</string>
+    <string name="text_add_owner_info_not_exist">Bổ sung thêm thông tin về chủ sở hữu của sản phẩm</string>
+    <string name="text_update">Cập nhật</string>
+    <string name="text_update_success" translatable="false">Cập nhật thành công</string>
+    <string name="text_project_description">Nhập mô tả…</string>
+    <string name="text_input_lenght_characters">ký tự: </string>
+    <string name="text_project_name">Tên dự án:</string>
+    <string name="text_filter">Lọc:</string>
+    <string name="text_month">Tháng</string>
+    <string name="title_add_need">Thêm nhu cầu</string>
+    <string name="title_add_dob">Thêm ngày sinh</string>
+    <string name="title_add_address">Thêm địa chỉ</string>
+    <string name="title_add_job">Thêm nghề nghiệp</string>
+    <string name="title_group_join">Nhóm tham gia:</string>
+    <string name="title_add_customer">Lưu khách hàng</string>
+    <string name="text_warning_district">Vui lòng chọn quận, huyện</string>
+    <string name="text_warning_address">Vui lòng nhập địa chỉ</string>
+    <string name="text_error_note_tite">Bạn phải nhập tiêu đề!</string>
+    <string name="text_title_city">Tỉnh/thành phố:</string>
+    <string name="text_title_district">Quận/huyện:</string>
+    <string name="text_count_character_phone">11 số</string>
+    <string name="text_error_update_info">Vui lòng cập nhật thông tin tài khoản của bạn.!</string>
+    <string name="text_count_character_owner_note">200 ký tự</string>
+    <string name="text_hint_input_description">Nhập mô tả cho sản phẩm…*</string>
+    <string name="text_count_character_description_4000">4000 ký tự</string>
+    <string name="text_error_session_expired" translatable="false">SESSION_EXPIRED</string>
+
+
+    <string name="text_error_account_not_active">Tài khoản của bạn chưa được kích hoạt. Xin vui lòng kích hoạt tài khoản trước khi đăng nhập!</string>
+    <string name="text_read_continue">…Xem thêm</string>
+    <string name="text_product_invalid">Sản phẩm không tồn tại</string>
+    <string name="text_none_comment">Hãy là người bình luận đầu tiên</string>
+    <string name="text_error_length_username">Tên đăng nhập phải có tối thiểu 6 kí tự!</string>
+    <string name="text_error_alphabet_username">Tên đăng nhập phải có tối thiểu 1 chữ cái!</string>
+    <string name="title_toolbar_select_cate">Chọn danh mục</string>
+    <string name="title_kind">Loại hình:</string>
+    <string name="title_brand">Hãng:</string>
+    <string name="text_error_choose_customer_or_product">Vui lòng chọn khách hàng hoặc sản phẩm!</string>
+    <string name="text_show_more_property">Mở rộng</string>
+    <string name="text_show_less">Thu gọn</string>
+    <string name="text_error_duplicate_email">Email không được trùng nhau!</string>
+    <string name="title_pick_all">Chọn tất cả</string>
+    <string name="title_unpick_all">Bỏ chọn tất cả</string>
+    <string name="alert_message_exit_register">Bạn có muốn thoát khỏi đăng ký tài khoản?</string>
+    <string name="alert_title_exit_register">Thoát</string>
+    <string name="text_error_email_non_existed">Địa chỉ email không tồn tại.!</string>
+    <string name="text_error_reup_empty_post">Bạn không thể Re-Up loại tin đăng này!</string>
+    <string name="text_error_add_customer">Bạn phải chọn ít nhất 1 khách hàng!</string>
+    <string name="title_toolbar_edit_note_private">Sửa nội dung riêng tư</string>
+    <string name="failure_connect_server">Lỗi kết nối</string>
+    <string name="contact_to_change_information">*Liên hệ hỗ trợ để thay đổi thông tin này</string>
+    <string name="text_btn_reload">Tải lại</string>
+    <string name="accept_friend">Đồng ý kết bạn</string>
+    <string name="add_friend">Thêm bạn</string>
+    <string name="prompt_active_code">Mã kích hoạt</string>
+    <string name="text_error_empty_active_code">Mã kích hoạt không được để trống!</string>
+
+
+    <string name="text_error_empty_email">Email không được để trống!</string>
+    <string name="sign_in_with_socials">Đăng nhập bằng mạng xã hội</string>
+    <string name="don_t_have_an_account">Bạn chưa có tài khoản?</string>
+    <string name="get_a_new_password_and_back_to_stage">hãy nhận mật khẩu mới và quay trở lại</string>
+    <string name="don_t_worry">Bạn đừng lo lắng,</string>
+    <string name="please_type_the_captcha_code_in_the_text_below">Vui lòng nhập mã xác thực trong văn bản dưới đây:</string>
+    <string name="please_enter_6_digit_code_sent_in_your_email">Vui lòng nhập mã gồm 6 chữ số đã được gửi đến email của bạn</string>
+    <string name="cant_not_find_friend">Không tìm thấy bạn bè</string>
+    <string name="error_enter_phone">Số điện thoại không hợp lệ phải từ 10 đến 11 số!</string>
+    <string name="fingerprint_not_deteted_in_device">Không tìm thấy tính năng quét vân tay trên thiết bị!</string>
+    <string name="not_support_os_less_than_6">Hệ điều hành dưới 6.0 không được hỗ trợ tính năng này!</string>
+    <string name="permission_not_granted_fingerprint">Chưa được cấp quyền quét vân tay</string>
+    <string name="add_lock_fingerprint_in_setting">Thêm khóa vân tay của bạn trong cài đặt</string>
+    <string name="you_should_add_atleast_1_finggerprint_to_use">Bạn nên thêm ít nhất một vân tay để sử dụng tính năng</string>
+    <string name="turn_on_private_mode">Đã bật chế độ bảo mật</string>
+    <string name="activeted_fingerprint">Đã kích hoạt tính năng</string>
+    <string name="verify_by_password"><u>Xác thực bằng mật khẩu</u></string>
+    <string name="default_sub_project" translatable="false">http://cdn.csell.vn/categories/backgrounds/sub_project.jpg</string>
+    <string name="active_code_sended_to_your_email">Mã code đã được gửi tới email của bạn!</string>
+    <string name="well_done">Bạn làm rất tốt,</string>
+    <string name="now_lets_create_your_new_password">bây giờ hãy tạo một mật khẩu mới</string>
+    <string name="dalete_note">Xóa ghi chú</string>
+    <string name="you_want_delete_this_note">Bạn muốn xóa ghi chú này?</string>
+    <string name="logout_account">Đăng xuất tài khoản</string>
+    <string name="you_sure_want_logout">Bạn có chắc chắn muốn đăng xuất không?</string>
+    <string name="comming_soon">Tính năng sắp ra!</string>
+    <string name="wellcome_back">Chào mừng bạn trở lại,</string>
+    <string name="sign_in_to_continue_using_csell">đăng nhập để tiếp tục sử dụng Csell</string>
+    <string name="close">Đóng</string>
+    <string name="security_information">Thông tin bảo mật</string>
+    <string name="login_verify_by_fingerprint">Đăng nhập, xác thực bằng vân tay</string>
+    <string name="public_vn">Công khai</string>
+    <string name="product_deleted_by_user">Sản phẩm đã bị xóa bởi người dùng!</string>
+    <string name="this_is_share_information_of_owner">Đây là thông tin chia sẻ riêng của chủ sở hữu</string>
+    <string name="Upload_more_image">Đăng thêm ảnh</string>
+
+
+    <string name="group_customer">NHÓM KHÁCH HÀNG</string>
+    <string name="manager_group">Quản lý nhóm ></string>
+    <string name="add_phone_number">Thêm số điện thoại</string>
+    <string name="add_other_phone_number">Thêm số khác</string>
+    <string name="add_other_email">Thêm email khác</string>
+    <string name="not_found_this_customer">Không tìm thấy khách hàng này!</string>
+    <string name="send_gmail">Gửi email</string>
+    <string name="send_message_group">Gửi tin nhóm</string>
+    <string name="send_email_group">Gửi email nhóm</string>
+    <string name="add_to_group">Thêm vào nhóm</string>
+    <string name="list_customer">DANH SÁCH KHÁCH HÀNG</string>
+    <string name="add_group">Tạo nhóm</string>
+    <string name="delete_group">Xóa nhóm</string>
+    <string name="csell_top_management_tool_vn">CSELL - Công cụ quản lý công việc hàng đầu Việt Nam</string>
+    <string name="edit">Sửa</string>
+    <string name="delete">Xóa</string>
+    <string name="there_is_no_news">Không có tin tức mới!</string>
+    <string name="accept">Xác nhận</string>
+    <string name="add">Thêm</string>
+    <string name="note_message_pending">Mở tin nhắn để tìm hiểu thêm thông tin về người gửi. Họ sẽ không biết bạn đã đọc cho đến khi bạn chấp nhận tin nhắn.</string>
+    <string name="send_request_friend">Gửi lời mời kết bạn</string>
+    <string name="name">Tên</string>
+    <string name="text_error_occurred">Có lỗi xảy ra!</string>
+    <string name="title">Tiêu đề *</string>
+    <string name="price">Giá</string>
+    <string name="department">Ngành:</string>
+    <string name="input_username">Nhập tên đăng nhập</string>
+    <string name="displayname">Tên hiển thị</string>
+    <string name="input_displayname">Nhập tên hiển thị</string>
+    <string name="input_email">Nhập email</string>
+    <string name="input_phone_number">Nhập số điện thoại</string>
+    <string name="password">Mật khẩu</string>
+    <string name="re_password">Nhập lại mật khẩu</string>
+    <string name="input_re_password">Nhập lại mật khẩu</string>
+    <string name="receive_code">Nhận mã</string>
+    <string name="add_new_node">Tạo note mới</string>
+    <string name="current_version">Phiên bản hiện tại</string>
+    <string name="do_you_want_to_delete_this_product">Bạn có muốn xóa sản phẩm không?</string>
+    <string name="please_try_again">Vui lòng thử lại</string>
+    <string name="view_all_calendar">Xem lịch đầy đủ ></string>
+    <string name="expiration_date_">Ngày hết hạn:</string>
+    <string name="upgrade">Nâng cấp</string>
+    <string name="free">Miễn phí</string>
+    <string name="real_estate">Bất động sản</string>
+    <string name="project">Dự Án</string>
+    <string name="year">năm</string>
+    <string name="month">tháng</string>
+    <string name="week">tuần</string>
+    <string name="day_">ngày</string>
+    <string name="hour_">giờ</string>
+    <string name="minite_">phút</string>
+    <string name="just_now">Vừa xong</string>
+    <string name="ago_">" trước"</string>
+    <string name="years">năm</string>
+    <string name="months">tháng</string>
+    <string name="weeks">tuần</string>
+    <string name="days">ngày</string>
+    <string name="hours">giờ</string>
+    <string name="munites">phút</string>
+    <string name="find_friend">Tìm kiếm bạn bè</string>
+    <string name="basic_information">Thông tin cơ bản</string>
+    <string name="additional_information">Thông tin bổ sung</string>
+    <string name="group" translatable="false">Nhóm</string>
+    <string name="add_image" translatable="false">Thêm ảnh</string>
+    <string name="add_member_group" translatable="false">Chọn thành viên nhóm</string>
+    <string name="recently" translatable="false">Gần đây</string>
+    <string name="see_all" translatable="false">Xem tất cả</string>
+    <string name="all_noti" translatable="false">Tất cả thông báo</string>
+    <string name="choose_max_10_picture" translatable="false">Chọn tối đa 10 ảnh</string>
+    <string name="please_choose_upload_my_picture" translatable="false">Chọn một vài ảnh</string>
+    <string name="image_number" translatable="false">Số ảnh </string>
+    <string name="upload_success" translatable="false">Tải ảnh lên thành công</string>
+    <string name="upload_image" translatable="false">Tải ảnh</string>
+    <string name="view_tutorial" translatable="false">Xem hướng dẫn</string>
+    <string name="customer_not_phone_number" translatable="false">Khách hàng chưa có số điện thoại!</string>
+    <string name="success" translatable="false">Thành công!</string>
+    <string name="image" translatable="false">Ảnh</string>
+    <string name="recent_interaction" translatable="false">Tương tác gần đây</string>
+    <string name="retry" translatable="false">Thử lại</string>
+    <string name="error_connect" translatable="false">Lỗi kết nối mạng</string>
+    <string name="Please_check_your_network_connection" translatable="false">Vui lòng kiểm tra kết nối mạng</string>
+    <string name="user_not_exists" translatable="false">Người dùng không tồn tại</string>
+    <string name="pls_try_again" translatable="false">Vui lòng thử lại</string>
+    <string name="product_sector" translatable="false">Ngành sản phẩm</string>
+    <string name="price_range_" translatable="false">Khoảng giá:</string>
+    <string name="billion" translatable="false">tỷ</string>
+    <string name="select_range_price" translatable="false">Chọn mức giá</string>
+    <string name="there_are_new_updates" translatable="false">Có cập nhật mới</string>
+    <string name="loading_please_wait" translatable="false">Đang tải bản cập nhât mới vui lòng chờ…</string>
+    <string name="restart_the_application_to_use" translatable="false">Vui lòng cập nhật ứng dụng lên phiên bản mới nhất trên cửa hàng Play store</string>
+    <string name="you_want_exit_this_screen" translatable="false">Bạn có muốn thoát khỏi màn tạo không ?</string>
+    <string name="add_contact" translatable="false">Thêm liên hệ</string>
+    <string name="would_you_like_to_add_customer" translatable="false">Bạn có muốn thêm khách hàng: \'</string>
+    <string name="into_your_phone_or_not" translatable="false">\' vào trong danh bạ điện thoại không?</string>
+    <!--string errror -->
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        fancy:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_create_contact"
+                style="@style/SF_M_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white_100"
+                android:paddingVertical="14dp"
+                android:text="@string/create_new"
+                android:textAllCaps="false"
+                android:textColor="@color/title_customer" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginHorizontal="@dimen/margin_horizontal"
+                android:background="@color/gray_100" />
+
+            <Button
+                android:id="@+id/btn_import_contact"
+                style="@style/SF_M_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white_100"
+                android:paddingVertical="14dp"
+                android:text="@string/title_import_phone_book"
+                android:textAllCaps="false"
+                android:textColor="@color/title_customer" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        fancy:cardCornerRadius="10dp">
+
+        <Button
+            android:id="@+id/btn_cancel_dialog_choose"
+            style="@style/SF_M_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/close"
+            android:textAllCaps="false"
+            android:textColor="@color/title_customer"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

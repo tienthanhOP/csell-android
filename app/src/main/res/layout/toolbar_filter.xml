@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbarAddCustomer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@color/white_100"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_close_blue" />
+
+            <!--<mehdi.sakout.fancybuttons.FancyButton-->
+            <!--android:id="@+id/btn_back_navigation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:paddingStart="10dp"-->
+            <!--fancy:fb_defaultColor="@android:color/transparent"-->
+            <!--fancy:fb_focusColor="@color/blue_gray_100"-->
+            <!--fancy:fb_iconResource="@drawable/ic_close_blue"-->
+            <!--fancy:fb_fontIconSize="22sp"-->
+            <!--fancy:fb_iconPaddingLeft="0dp"-->
+            <!--fancy:fb_iconPaddingRight="20dp"-->
+            <!--fancy:fb_text=""-->
+            <!--fancy:fb_textColor="@color/dark_blue_100"/>-->
+
+            <TextView
+                android:id="@+id/custom_TitleToolbar"
+                style="@style/SF_B_18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/dark_blue_100" />
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="match_parent">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_save_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/gray_100"
+                    fancy:fb_fontIconSize="22sp"
+                    fancy:fb_iconPosition="right"
+                    fancy:fb_text=""
+                    fancy:fb_textColor="@color/dark_blue_100" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line_alpha_10" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

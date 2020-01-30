@@ -1,0 +1,32 @@
+{
+  "$id": "5",
+  "AutoRefresh": true,
+  "AutoRefreshRemotes": true,
+  "CommitTextLinks": null,
+  "DraftCommitMsg": "",
+  "IncomingSavedCount": 0,
+  "LastCheckedRemotes": "2019-11-18T22:58:59.1974229+07:00",
+  "LastUsedView": 1,
+  "LogBranchFilterIndex": 0,
+  "OutgoingSavedCount": 0,
+  "SidebarExpandedItems": [
+    "Branches"
+  ],
+  "SidebarWidth": 210.0,
+  "SubtreeLinks": [],
+  "RemoteProjectLinks": [
+    {
+      "$id": "6",
+      "BaseUrl": "https://bitbucket.org/",
+      "Identifier": "",
+      "RemoteName": "default",
+      "Type": 0,
+      "Username": "thanhhp",
+      "CloneUrl": "https://thanhhp@bitbucket.org/csellvn/csellandroid",
+      "ProjectUrl": "https://bitbucket.org/csellvn/csellandroid",
+      "AccountId": "thanhhp@bitbucket.org",
+      "AvatarUrl": "https://bytebucket.org/ravatar/%7Bdbd59e07-7d5e-4e5f-a89c-bfb291f3dd1d%7D?ts=android",
+      "DisplayName": "default: https://bitbucket.org/"
+    }
+  ]
+}

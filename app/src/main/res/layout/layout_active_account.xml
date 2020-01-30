@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_hash_tag"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_34"
+    android:paddingVertical="10dp">
+
+    <TextView
+        style="@style/SF_M_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tài khoản của bạn chưa được kích hoạt"
+        android:textColor="@color/dark_blue_100" />
+
+    <TextView
+        style="@style/SF_M_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Vui lòng nhập địa chỉ Email để nhận mã xác nhận kích hoạt tài khoản"
+        android:textColor="@color/dark_blue_50" />
+
+    <TextView
+        style="@style/SF_M_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email:"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_blue_100" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        style="@style/SF_M_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/dark_blue_100"
+        android:textColorHint="@color/dark_blue_25" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_send"
+            style="@style/SF_B_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_login"
+            android:text="Gửi"
+            android:textColor="@color/white_100" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/SF_B_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_register_button"
+            android:text="Hủy"
+            android:textColor="@color/white_100" />
+
+    </LinearLayout>
+
+</LinearLayout>

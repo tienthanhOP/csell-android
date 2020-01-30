@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "csell.com.vn.csell"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 18
+        versionName "BETA-1.0.18"
+        testInstrumentationRunner "android.support.corner_top_white.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation('com.android.support:appcompat-v7:27.1.1') {
+        force = true
+    }
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
+    implementation 'com.github.medyo:fancybuttons:1.8.4'
+    implementation 'com.github.esafirm.android-image-picker:rximagepicker:1.13.1'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.android.support:design:27.1.1'
+    implementation files('libs/converter-scalars-2.3.0.jar')
+    implementation('io.socket:socket.io-client:0.9.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.firebase:firebase-core:15.0.0'
+    implementation 'com.google.firebase:firebase-auth:15.0.0'
+    implementation 'com.google.firebase:firebase-common:15.0.0'
+    implementation 'com.google.firebase:firebase-analytics:15.0.0'
+    implementation 'com.google.firebase:firebase-iid:15.0.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.3'
+    implementation 'com.google.android.gms:play-services-base:15.0.0'
+    implementation 'com.google.android.gms:play-services-tasks:15.0.0'
+    implementation 'com.google.android.gms:play-services-basement:15.0.0'
+    implementation 'com.google.android.gms:play-services-measurement-base:15.0.0'
+    implementation 'com.google.android.gms:play-services-auth:15.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:15.0.0'
+    implementation 'com.google.android.gms:play-services-stats:15.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:3.3.1'
+    implementation 'com.firebaseui:firebase-ui-database:3.3.1'
+    implementation 'com.google.firebase:firebase-database:15.0.0'
+    implementation 'com.google.firebase:firebase-database-collection:15.0.0'
+    implementation 'com.google.firebase:firebase-database-connection:15.0.0'
+    implementation 'com.google.firebase:firebase-storage:15.0.0'
+    implementation 'com.firebaseui:firebase-ui-storage:3.3.1'
+    implementation 'com.google.firebase:firebase-messaging:15.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:15.0.0'
+    implementation 'com.google.android.gms:play-services-plus:15.0.0'
+    implementation 'com.google.android.gms:play-services-flags:15.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.31.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation files('libs/activation.jar')
+    implementation 'com.github.sundeepk:compact-calendar-view:2.0.2.3'
+    implementation 'com.google.android:flexbox:1.0.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.12'
+    def lifecycle_version = "1.1.1"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.synnapps:carouselview:0.1.5'
+    implementation 'com.facebook.shimmer:shimmer:0.3.0'
+
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+}
+
+apply plugin: 'com.google.gms.google-services'

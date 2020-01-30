@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SF_B_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/select_range_price"
+            android:textColor="@color/title_name_product" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                style="@style/SF_B_12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="5dp"
+                android:text="Mức giá"
+                android:textAllCaps="true"
+                android:textColor="@color/text_title_content_filter_social" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                style="@style/SF_B_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thỏa thuận"
+                android:textColor="@color/text_title_content_filter_social" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/margin_horizontal_16dp"
+            android:paddingVertical="10dp">
+
+            <EditText
+                android:id="@+id/edt_min_price"
+                style="@style/SF_M_16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:hint="Từ"
+                android:inputType="numberSigned"
+                android:textColor="@color/text_content_filter_social"
+                android:textColorHint="@color/text_hint_content_filter_social" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/text_content_filter_social" />
+
+            <EditText
+                android:id="@+id/edt_max_price"
+                style="@style/SF_M_16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:hint="Đến"
+                android:inputType="numberSigned"
+                android:textColor="@color/text_content_filter_social"
+                android:textColorHint="@color/text_hint_content_filter_social" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@color/line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/fui_transparent" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_accept"
+            style="@style/SF_B_15"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue_main"
+            android:text="@string/agree"
+            android:textColor="@color/white_100" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:angle="135"
+                android:endColor="@color/white_background_100"
+                android:startColor="@color/gray_50"
+                android:type="linear" />
+            <size
+                android:width="90dp"
+                android:height="90dp" />
+        </shape>
+    </item>
+
+    <!--<item android:drawable="@drawable/ic_message_white"-->
+    <!--android:width="14sp" android:height="14sp"-->
+    <!--android:gravity="center">-->
+    <!--</item>-->
+
+</layer-list>

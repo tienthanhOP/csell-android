@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/from_input_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:hint="@string/text_hint_input_description"
+            android:minHeight="150dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:textColorHint="@color/text_hint_des_create_product">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_description"
+                style="@style/SF_R_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_line_bottom_spinner"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:maxLength="4000"
+                android:minHeight="150dp"
+                android:paddingEnd="8dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/text_des_create_product" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtCountCharacter"
+            style="@style/SF_R_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtError"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="-40dp"
+            android:gravity="bottom"
+            android:text="0/4000 ký tự"
+            android:textColor="@color/text_hint_des_create_product" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNext"
+        style="@style/SF_B_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/button_next_create_product"
+        android:gravity="center"
+        android:text="@string/continue_"
+        android:textAllCaps="true"
+        android:textColor="@color/white_100" />
+
+</LinearLayout>

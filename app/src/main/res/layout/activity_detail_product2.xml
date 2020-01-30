@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:fragment=".views.social.activity.DetailProductActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fui_transparent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/tool_bar_detail_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_100">
+
+                    <!--image, sim-->
+                    <RelativeLayout
+                        android:id="@+id/layout_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_background_100"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <com.synnapps.carouselview.CarouselView
+                            android:id="@+id/carouselView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:autoPlay="false"
+                            app:fillColor="@color/dot_indicator_select"
+                            app:indicatorMarginVertical="50dp"
+                            app:pageColor="@color/dot_indicator_not_select"
+                            app:slideInterval="4000"
+                            app:strokeColor="@color/dot_indicator_not_select"
+                            app:strokeWidth="1dp" />
+
+                        <FrameLayout
+                            android:id="@+id/layout_sim"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/img_sim"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/txtDetailSim"
+                                style="@style/SF_M_16"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingHorizontal="16dp"
+                                android:paddingTop="45dp"
+                                android:paddingBottom="60dp"
+                                android:textColor="@color/white_100" />
+
+                            <TextView
+                                android:id="@+id/txtReadMore"
+                                style="@style/SF_R_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|right"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="16dp"
+                                android:paddingBottom="60dp"
+                                android:text="@string/text_read_continue"
+                                android:textColor="@color/white_50"
+                                android:visibility="visible" />
+
+                        </FrameLayout>
+
+                        <View
+                            android:id="@+id/layout_overlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#bf000000"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/corner_top_white"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="16dp">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rcv_cat"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_cover_toolbar" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout_button_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/btn_back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="?attr/actionBarSize"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_chevron_left_white_24dp" />
+
+                                <TextView
+                                    style="@style/SF_M_16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-5dp"
+                                    android:text="@string/title_back_vn"
+                                    android:textColor="@color/white_100" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/btn_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="?attr/actionBarSize"
+                                    android:gravity="center_vertical"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        style="@style/SF_M_16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chỉnh sửa"
+                                        android:textColor="@color/white_100" />
+
+                                    <ImageView
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginStart="5dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/icon_edit_white" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layout_owner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/img_name_owner"
+                                        style="@style/SF_B_16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Thanh"
+                                        android:textColor="@color/white_100" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/img_avatar_owner"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginStart="6dp"
+                                        app:civ_border_color="@color/white_100"
+                                        app:civ_border_width="@dimen/dp_1" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/img_more"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/ic_more_vert_white_24dp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_100"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_product_name"
+                    style="@style/SF_B_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_horizontal_16dp"
+                    android:maxLines="2"
+                    android:textColor="@color/title_name_product" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_left_16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layout_post_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@drawable/border_status_product"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgTypePost"
+                            android:layout_width="8dp"
+                            android:layout_height="11dp"
+                            android:layout_marginEnd="5dp" />
+
+                        <TextView
+                            android:id="@+id/txtPostTypeName"
+                            style="@style/SF_R_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/status_product" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txt_price_product"
+                        style="@style/SF_B_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/price_product" />
+                </LinearLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout_detail_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white_100"
+                    app:tabIndicatorColor="@color/text_tab_selected_product"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/text_tab_selected_product"
+                    app:tabTextAppearance="@style/SF_M_14"
+                    app:tabTextColor="@color/text_tab_unselected_product" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_detail_product_is_deleted"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/SF_B_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/product_deleted_by_user"
+                        android:textColor="@color/red_100"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.516"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_product_is_deleted"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_left_dark_light_24dp" />
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_detail_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/margin_top_16dp"
+            android:src="@drawable/ic_add_white_24dp"
+            android:visibility="gone"
+            app:backgroundTint="@color/green_main"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_message"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/margin_top_16dp"
+            android:layout_marginBottom="126dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_message_detail_product"
+            android:visibility="gone"
+            app:backgroundTint="@color/blue_main"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/margin_top_16dp"
+            android:layout_marginBottom="66dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_call_detail_product"
+            android:visibility="gone"
+            app:backgroundTint="@color/green_main"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
+
+

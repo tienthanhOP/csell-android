@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        fancy:cardCornerRadius="6dp"
+        fancy:cardBackgroundColor="@color/white_100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/activity_horizontal_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar_user"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_person"
+                fancy:civ_fill_color="@color/white_100" />
+
+            <TextView
+                style="@style/SF_R_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white_100"
+                android:text="@string/title_post_social"
+                android:textColor="@color/black_75" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        fancy:cardCornerRadius="6dp">
+
+        <Button
+            android:id="@+id/btn_share_new_post"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/title_share_new_post"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_post_social" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        fancy:cardCornerRadius="6dp">
+
+        <Button
+            android:id="@+id/btn_share_post"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/title_share_post"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_post_social" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginHorizontal="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--fancy:cardCornerRadius="10dp">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_search_post"-->
+    <!--style="@style/SF_M_14"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@color/white_100"-->
+    <!--android:paddingVertical="14dp"-->
+    <!--android:text="@string/title_search_post"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

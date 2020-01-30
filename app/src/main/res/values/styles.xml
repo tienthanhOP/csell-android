@@ -1,0 +1,481 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:actionMenuTextColor">@color/ef_white</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="actionButtonStyle">@style/AppTheme.Widget.ActionButton</item>
+        <item name="colorControlNormal">@color/edittext_line</item>
+    </style>
+
+    <style name="TitleTheme">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LoginScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_main</item>
+    </style>
+
+    <style name="TitleItemTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ImagePickerTheme" parent="ef_BaseTheme">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Required for pre-Lollipop. -->
+        <item name="overlapAnchor" tools:ignore="NewApi">false</item>
+        <item name="android:dropDownVerticalOffset">-10.0dip</item>
+        <item name="android:dropDownHorizontalOffset">16dp</item>
+
+        <item name="android:popupBackground">@drawable/background_menu_overflow</item>
+        <item name="android:popupTheme" tools:ignore="NewApi">@style/TitleTheme</item>
+        <item name="android:textColor">@color/ef_white</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="AppTheme.Widget.ActionButton" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/ef_white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="LoadingYourScreen">
+        <item name="android:fontFamily">@font/ibmplexsans_regular</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="DialogCustomerChoose" parent="@style/AppTheme">
+        <item name="android:fontFamily">@font/ibmplexsans_regular</item>
+        <item name="android:textColor">@color/blue_100</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DialogCreateAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="DialogSortAnimation">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+    <style name="Month" parent="@style/AppTheme">
+        <item name="android:fontFamily">IBM Plex Sans</item>
+        <item name="android:textColor">#FF373F3D</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SmallText_Black">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textColor">#FF0A0F13</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="full_screen_dialog_no_status_bar" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="SeekBarColor" parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">@color/green_main</item>
+    </style>
+
+
+    <style name="AppTheme.TransparentTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogShareAnimation" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!--new styles -->
+    <!--San Francisco size 8-->
+    <style name="SF_L_8">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="SF_R_8">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="SF_M_8">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="SF_B_8">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <!--San Francisco size 10-->
+    <style name="SF_L_10">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SF_R_10">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SF_M_10">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="SF_B_10">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--San Francisco size 11-->
+    <style name="SF_L_11">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SF_R_11">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SF_M_11">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SF_B_11">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!--San Francisco size 12-->
+    <style name="SF_L_12">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SF_R_12">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SF_M_12">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="SF_B_12">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--San Francisco size 13-->
+    <style name="SF_L_13">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SF_R_13">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SF_M_13">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SF_B_13">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!--San Francisco size 14-->
+    <style name="SF_L_14">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SF_R_14">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SF_M_14">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SF_B_14">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--San Francisco size 15-->
+    <style name="SF_L_15">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SF_R_15">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SF_M_15">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SF_B_15">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--San Francisco size 16-->
+    <style name="SF_L_16">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SF_R_16">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SF_M_16">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SF_B_16">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--San Francisco size 18-->
+    <style name="SF_L_18">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SF_R_18">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SF_M_18">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SF_B_18">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--San Francisco size 19-->
+    <style name="SF_L_19">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="SF_R_19">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="SF_M_19">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="SF_B_19">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <!--San Francisco size 20-->
+    <style name="SF_L_20">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SF_R_20">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SF_M_20">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SF_B_20">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--San Francisco size 22-->
+    <style name="SF_L_22">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="SF_R_22">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="SF_M_22">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="SF_B_22">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!--San Francisco size 24-->
+    <style name="SF_L_24">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SF_R_24">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SF_M_24">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SF_B_24">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!--San Francisco size 26-->
+    <style name="SF_L_26">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="SF_R_26">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="SF_M_26">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="SF_B_26">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!--San Francisco size 32-->
+    <style name="SF_L_32">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="SF_R_32">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="SF_M_32">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="SF_B_32">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <!--San Francisco size 36-->
+    <style name="SF_L_36">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_light</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="SF_R_36">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_regular</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="SF_M_36">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_medium</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="SF_B_36">
+        <item name="android:fontFamily">@font/sanfranciscodisplay_bold</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

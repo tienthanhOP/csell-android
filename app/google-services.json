@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "846118602177",
+    "firebase_url": "https://csell-database.firebaseio.com",
+    "project_id": "csell-database",
+    "storage_bucket": "csell-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846118602177:android:35064a67b539522a",
+        "android_client_info": {
+          "package_name": "csell.com.vn.csell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846118602177-eht1odem4u0lnaiko04n343h5t0bjiio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csell.com.vn.csell",
+            "certificate_hash": "521cec18f8e2282678886d36bdf75ea9cb92b3a6"
+          }
+        },
+        {
+          "client_id": "846118602177-hi61sj296rb72a07paciqa9p5368doau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csell.com.vn.csell",
+            "certificate_hash": "bf36c2bcb0c26c65fff140a0ee68790373018ee7"
+          }
+        },
+        {
+          "client_id": "846118602177-781dposv5qulujn46t9ja1tp24g1qoau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csell.com.vn.csell",
+            "certificate_hash": "22b73f32190a8fd23e900671c0a8a30fde330ee6"
+          }
+        },
+        {
+          "client_id": "846118602177-cgduqpdshqrpgai9dh905pqut4jajg26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csell.com.vn.csell",
+            "certificate_hash": "b730d4eb2d12a866b1d8f4594946a5bb636bf954"
+          }
+        },
+        {
+          "client_id": "846118602177-dulh69grt03h505m90hm7fd864o2vv3v.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "846118602177-dulh69grt03h505m90hm7fd864o2vv3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMnnryEJz8D9WQCuMs23wX5PA-8_x0_Zw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846118602177-dulh69grt03h505m90hm7fd864o2vv3v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "846118602177-rc7h3p0ha0o781gjcl944rvhmg3oomib.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "csell.com.vn.csell"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

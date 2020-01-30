@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fui_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fui_transparent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white_100"
+            app:cardCornerRadius="3dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:background="@drawable/border_like_comment" />
+
+        <TextView
+            style="@style/SF_B_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:gravity="center"
+            android:paddingBottom="14dp"
+            android:text="@string/filter_product"
+            android:textColor="@color/text_title_filter_social" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_100"
+            android:paddingHorizontal="@dimen/margin_horizontal_16dp">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="110dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/from_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/SF_B_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/text_location"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_title_content_filter_social" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_spinner_location_white">
+
+                                <Spinner
+                                    android:id="@+id/spn_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:spinnerMode="dialog" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_spinner_location_white">
+
+                                <Spinner
+                                    android:id="@+id/spn_district"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:spinnerMode="dialog" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/SF_B_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="30dp"
+                        android:text="@string/product_sector"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_title_content_filter_social" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lv_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        style="@style/SF_B_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="24dp"
+                        android:text="@string/price"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_title_content_filter_social" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_select_price"
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_select_price_filter_social"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Chọn giá"
+                        android:textColor="@color/text_item_job_filter_social" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lv_properties_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp" />
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_apply_filter"
+                    style="@style/SF_B_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_apply_filter"
+                    android:text="@string/title_apply"
+                    android:textColor="@color/white_100" />
+
+                <Button
+                    android:id="@+id/btn_skip_filter"
+                    style="@style/SF_B_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/fui_transparent"
+                    android:text="@string/title_no_filter"
+                    android:textColor="@color/text_btn_no_filter_filter_social" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

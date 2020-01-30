@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_horizontal"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnEdit"
+        style="@style/SF_M_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="@color/gray_50"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#ffffff"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="10dp"
+        fancy:fb_text="Cập nhật sản phẩm"
+        fancy:fb_textColor="#000000" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnDelete"
+        style="@style/SF_M_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="@color/gray_50"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#ffffff"
+        fancy:fb_focusColor="#f86d78"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="10dp"
+        fancy:fb_text="Xóa"
+        fancy:fb_textColor="#f86d78" />
+
+
+</LinearLayout>

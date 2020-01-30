@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F7F9"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+    android:paddingVertical="8dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/icon_avatar_text"
+        style="@style/SF_B_24"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_textview_red"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white_100" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/SF_M_16"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="Chuc Ngo"
+            android:textColor="@color/dark_blue_100" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            style="@style/SF_R_14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:singleLine="true"
+            android:text="@string/csell_top_management_tool_vn"
+            android:textColor="@color/black_50"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

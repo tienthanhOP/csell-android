@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_new">20dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="crumb_text_size_2line">12sp</dimen>
+
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tab_layout_height">40dp</dimen>
+
+    <dimen name="recycler_section_header_height">40dp</dimen>
+    <dimen name="cardview_radius_color">6dp</dimen>
+    <dimen name="heght_slideImage">280dp</dimen>
+    <dimen name="height_from_btn_like_comment_shared">35dp</dimen>
+    <dimen name="height_bottom_bar">54dp</dimen>
+    <dimen name="height_rv_note">150dp</dimen>
+
+    <!--new dimens-->
+    <dimen name="margin_vertical_16dp">16dp</dimen>
+    <dimen name="margin_horizontal_16dp">16dp</dimen>
+    <dimen name="margin_top_16dp">16dp</dimen>
+    <dimen name="margin_bottom_16dp">16dp</dimen>
+    <dimen name="margin_left_16dp">16dp</dimen>
+    <dimen name="margin_right_16dp">16dp</dimen>
+
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_27">27dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_34">34dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="dp_230">230dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="dp_280">280dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+
+    <dimen name="height_item_cardview_tab_all">195dp</dimen>
+    <dimen name="width_item_info_in_item_cardview_tab_all">174dp</dimen>
+    <dimen name="height_item_info_in_item_cardview_tab_all">155dp</dimen>
+    <dimen name="margin_right_of_cardview_image_in_item_cardview_tab_all">58dp</dimen>
+    <dimen name="shadow_cardview_product">6dp</dimen>
+    <dimen name="height_spinner_location_in_choose_project">25dp</dimen>
+
+</resources>

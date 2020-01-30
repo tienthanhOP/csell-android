@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Required for pre-Lollipop. -->
+        <item name="overlapAnchor" tools:ignore="NewApi">false</item>
+        <item name="android:dropDownVerticalOffset">-10.0dip</item>
+        <item name="android:dropDownHorizontalOffset">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/ef_white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:popupBackground">@drawable/background_menu_overflow</item>
+        <item name="android:popupTheme">@style/TitleTheme</item>
+
+    </style>
+</resources>

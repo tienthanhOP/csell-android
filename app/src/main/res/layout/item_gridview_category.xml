@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtCategoryName"
+        style="@style/SF_M_13"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:drawableRight="@drawable/ic_vector_arrow_right"
+        android:drawingCacheQuality="auto"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:singleLine="true"
+        android:text="Ô tô"
+        android:textColor="@color/text_address_bar" />
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:orientation="vertical"
+    tools:fragment=".views.note.activity.NoteDetailActivity">
+
+    <include
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tv_title_note"
+                    style="@style/SF_B_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chạy thử xe với chị Linh "
+                    android:textColor="@color/title_note_detail_product" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_note_blue"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp">
+
+                        <ImageView
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_access_time_blue_note_24dp" />
+
+                        <TextView
+                            android:id="@+id/tv_hour"
+                            style="@style/SF_B_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="14:30"
+                            android:textColor="@color/text_in_box_detail_product" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_note_blue"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp">
+
+                        <ImageView
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_date_range_blue_note_24dp" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/SF_B_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="07/05"
+                            android:textColor="@color/text_in_box_detail_product" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    app:alignContent="stretch"
+                    app:alignItems="stretch"
+                    app:flexWrap="wrap">
+
+                    <LinearLayout
+                        android:id="@+id/layout_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_border_note_green"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_person_green_24dp" />
+
+                        <TextView
+                            android:id="@+id/tv_info"
+                            style="@style/SF_B_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:singleLine="true"
+                            android:text="Chi Linh"
+                            android:textColor="@color/green_main" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/layout_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_note_info_orange"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_local_offer_orange" />
+
+                        <TextView
+                            android:id="@+id/tv_product_name"
+                            style="@style/SF_B_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#F7570B" />
+
+                    </LinearLayout>
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_note_detail_product" />
+
+                <TextView
+                    android:id="@+id/tv_content_note"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/title_note_detail_product" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:paddingVertical="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/SF_B_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_result"
+                        android:textAllCaps="true"
+                        android:textColor="@color/title_note_detail_product" />
+
+                    <TextView
+                        android:id="@+id/tv_done"
+                        style="@style/SF_R_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/title_toolbar_done_vn"
+                        android:textColor="@color/title_note_detail_product"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edt_result_note"
+                    style="@style/SF_R_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="@string/input_result_note"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:padding="10dp"
+                    android:textColor="@color/black_75"
+                    android:textColorHint="@color/title_note_detail_product" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_hash_tag"
+    android:paddingHorizontal="@dimen/dp_34"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có muốn rời khỏi trang này ?"
+        style="@style/SF_M_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agree"
+            android:background="@android:color/transparent"
+            style="@style/SF_M_14"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/blue_100"/>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:background="@android:color/transparent"
+            style="@style/SF_M_14"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

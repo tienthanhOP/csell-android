@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_background_100" />
+
+    <EditText
+        android:id="@+id/txt_search"
+        style="@style/SF_R_13"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="@dimen/margin_horizontal_16dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_search_accept_friend"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:gravity="center"
+        android:hint="@string/search_"
+        android:inputType="textAutoComplete"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_hint_search"
+        tools:ignore="RtlCompat" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_background_100" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/loading_refreshing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_acceptFriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

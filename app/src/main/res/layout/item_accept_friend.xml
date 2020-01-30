@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_contact_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar_contact_friend"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="2sp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/icon_category_main"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+
+                <ImageView
+                    android:id="@+id/icon_category_sub"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5.4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name_friend"
+                    style="@style/SF_R_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Nguyễn Văn A"
+                    android:textColor="@color/notification_title_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_status_friend"
+                    style="@style/SF_R_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textColor="@color/notification_time_ago"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_add_friend"
+                    style="@style/SF_M_14"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    fancy:fb_defaultColor="@color/notification_button_accept"
+                    fancy:fb_focusColor="@color/white_background_100"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="15dp"
+                    fancy:fb_text="@string/accept"
+                    fancy:fb_textColor="@color/white_100" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_remove_friend"
+                        style="@style/SF_M_14"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"
+                        fancy:fb_borderColor="#dae1e6"
+                        fancy:fb_borderWidth="1dp"
+                        fancy:fb_defaultColor="#00000000"
+                        fancy:fb_focusColor="@color/white_background_100"
+                        fancy:fb_radius="15dp"
+                        fancy:fb_text="@string/delete"
+                        fancy:fb_textColor="@color/text_button_denied" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:mContext="csell.com.vn.csell.views.customer.activity.AddOrEditCustomerActivity">
+
+    <include
+        android:id="@+id/toolbarAddCustomer"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white_100" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarAddCustomer"
+        android:background="@color/white_100">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/slider_img_product"
+                    style="@style/SF_B_24"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/rounded_textview"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/white_100" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    style="@style/SF_M_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:hint="@string/customer_name"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:text=""
+                    android:textColor="@color/text_content_add_customer"
+                    android:textColorHint="@color/text_hint_content_add_customer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_add_need"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_need"
+                    style="@style/SF_R_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:hint="@string/need"
+                    android:inputType="textCapSentences"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textColor="@color/text_content_add_customer"
+                    android:textColorHint="@color/text_hint_content_add_customer"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/add_phone_number"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        style="@style/SF_R_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:hint="@string/phone_number"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer" />
+
+                    <EditText
+                        android:id="@+id/edt_phone2"
+                        style="@style/SF_R_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:hint="@string/other_phone_numbers"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/tvPhone2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                        <TextView
+                            style="@style/SF_R_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/add_other_phone_number"
+                            android:textColor="@color/add_more_field_in_add_edit_contract" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/add_other_email"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        style="@style/SF_R_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer" />
+
+                    <EditText
+                        android:id="@+id/edt_email2"
+                        style="@style/SF_R_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:hint="@string/hint_email_another"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                        <TextView
+                            style="@style/SF_R_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/add_other_email"
+                            android:textColor="@color/add_more_field_in_add_edit_contract" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_hashtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="Thêm hashtag"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_hashtag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edt_hashtag"
+                        style="@style/SF_R_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_line_bottom_spinner"
+                        android:hint="@string/hashtag_optional"
+                        android:inputType="textCapSentences"
+                        android:maxLength="30"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer"
+                        android:visibility="visible" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_hash_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_add_dob"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/SF_R_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/dob_"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer" />
+
+                    <ImageView
+                        android:id="@+id/img_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_date_range_black" />
+
+                    <TextView
+                        android:id="@+id/edt_dob"
+                        style="@style/SF_R_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingHorizontal="3dp"
+                        android:textColor="@color/text_content_add_customer"
+                        android:textColorHint="@color/text_hint_content_add_customer" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_add_address"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    style="@style/SF_R_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:hint="@string/Address"
+                    android:inputType="textCapSentences"
+                    android:maxLength="100"
+                    android:textColor="@color/text_content_add_customer"
+                    android:textColorHint="@color/text_hint_content_add_customer"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="32dp"
+                android:paddingBottom="12dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/tv_add_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/bg_button_add_more_field_in_add_edit_contract" />
+
+                    <TextView
+                        style="@style/SF_M_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:drawablePadding="6dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_add_job"
+                        android:textColor="@color/add_more_field_in_add_edit_contract"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_jobs"
+                    style="@style/SF_R_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_line_bottom_spinner"
+                    android:hint="@string/jobs"
+                    android:inputType="textCapSentences"
+                    android:maxLength="30"
+                    android:textColor="@color/text_content_add_customer"
+                    android:textColorHint="@color/text_hint_content_add_customer"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <RelativeLayout
+                android:id="@+id/frame_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="12dp"
+                android:paddingHorizontal="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/SF_M_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_group_join"
+                    android:textColor="@color/text_content_add_customer" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_picked_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:paddingTop="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/icon_edit" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_100" />
+
+            <TextView
+                android:id="@+id/tv_deleteCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/delete_customer"
+                android:textColor="@color/red_100"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_save_customer"
+                style="@style/SF_B_15"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/background_btn_login"
+                android:text="@string/title_add_customer"
+                android:textColor="@color/white_100" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

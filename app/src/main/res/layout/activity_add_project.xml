@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_custom" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtProjectName"
+                style="@style/SF_M_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:hint="@string/text_hint_add_project"
+                android:inputType="textCapSentences"
+                android:minHeight="40dp"
+                android:textColor="@color/dark_blue_100"
+                android:textColorHint="@color/dark_blue_25" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_location_white"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spn_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_spinner_location_white"
+                        android:gravity="center"
+                        android:minHeight="30dp"
+                        android:spinnerMode="dialog" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/arrow_timeline" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_location_white"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spn_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_spinner_location_white"
+                        android:gravity="center"
+                        android:minHeight="30dp"
+                        android:spinnerMode="dialog" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/arrow_timeline" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtDescription"
+                style="@style/SF_R_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:hint="@string/text_project_description"
+                android:inputType="textMultiLine"
+                android:maxLength="2000"
+                android:minHeight="400dp"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/dark_blue_100"
+                android:textColorHint="@color/dark_blue_25" />
+
+            <TextView
+                android:id="@+id/txt_input_2000"
+                style="SF_R_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="right"
+                android:text="@string/text_project_description"
+                android:textColor="@color/dark_blue_25" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

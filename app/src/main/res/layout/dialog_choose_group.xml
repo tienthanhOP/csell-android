@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/SF_M_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_orange"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:text="Chọn nhóm để tham gia"
+        android:textColor="@color/white_100" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_group_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/background_white_border" />
+
+    <ImageButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:padding="15dp"
+        android:src="@drawable/ic_action_close" />
+
+</RelativeLayout>

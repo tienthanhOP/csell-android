@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00000000</color>
+    <color name="colorPrimaryDark">#2adb92</color>
+    <color name="colorAccent">#2adb92</color>
+
+    <color name="green_bold">#5cb85c</color>
+    <color name="green_normal">#aedd94</color>
+
+    <color name="line">#EFEFF1</color>
+    <!-- login_activity -->
+    <color name="edittext_line">#FF373F3D</color>
+    <color name="line_vertical">#FFA7ABAD</color>
+
+    <color name="comment_color">#FFB3B3B3</color>
+
+    <color name="black_properties">#FF373F3D</color>
+    <color name="blue_border">#00f2ff</color>
+    <color name="transparant_20">#10000000</color>
+    <!--<color name="light_blue_100">#FFF7570B</color>-->
+    <color name="gray_background">#05002F4F</color>
+    <color name="blue_original_3">#FF9EC2C4</color>
+    <color name="red_error">#FFF96B62</color>
+    <color name="gray_line">#FFF3F4F4</color>
+    <color name="gray_line_alpha_10">#1A002A46</color>
+    <color name="low_grey">#FFF0F6F8</color>
+    <color name="opacity_grey">#FFF6F7F9</color>
+    <color name="orange">#FFF7570B</color>
+
+    <!--Color new-->
+
+    <color name="dark_blue_100">#002f4f</color>
+    <color name="dark_blue_85">#002f4f</color>
+    <color name="dark_blue_75">#bf002f4f</color>
+    <color name="dark_blue_50">#80002f4f</color>
+    <color name="dark_blue_25">#40002f4f</color>
+    <color name="dark_blue_15">#26002f4f</color>
+    <color name="dark_blue_3">#08002f4f</color>
+
+    <color name="black_100">#0a0f13</color>
+    <color name="black_75">#bf0a0f13</color>
+    <color name="black_50">#800a0f13</color>
+    <color name="black_25">#400a0f13</color>
+
+    <color name="light_blue_100">#33c6d1</color>
+    <color name="light_blue_75">#bf33c6d1</color>
+    <color name="light_blue_50">#8033c6d1</color>
+    <color name="light_blue_25">#4033c6d1</color>
+
+    <color name="red_100">#f63e4d</color>
+    <color name="red_75">#bff63e4d</color>
+    <color name="red_50">#80f63e4d</color>
+    <color name="red_25">#40f63e4d</color>
+
+    <color name="white_100">#ffffff</color>
+    <color name="white_95">#eef1f4</color>
+    <color name="white_93">#eaedf1</color>
+    <color name="white_75">#bfffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_25">#40ffffff</color>
+
+    <color name="white_background_100">#f6f7f9</color>
+    <color name="white_background_75">#bff6f7f9</color>
+    <color name="white_background_50">#80f6f7f9</color>
+    <color name="white_background_25">#40f6f7f9</color>
+
+    <color name="gray_100">#d1d9df</color>
+    <color name="gray_75">#bfd1d9df</color>
+    <color name="gray_50">#80d1d9df</color>
+    <color name="gray_25">#40d1d9df</color>
+
+    <color name="blue_100">#0275c3</color>
+
+    <color name="border_spinner_location_in_choose_project">#0a0f13</color>
+
+    <color name="button_accept_pending">#2adb92</color>
+    <color name="background_content_chat">#2adb92</color>
+
+    <!--ver2-->
+
+    <color name="text_hint_search">#402f3546</color>
+    <color name="text_main">#0a0f13</color>
+    <color name="blue_main">#1b8af2</color>
+    <color name="text_address_bar">#5c6377</color>
+    <color name="green_main">#2adb92</color>
+    <color name="black_main">#2F3546</color>
+    <color name="black_main_75">#BF2F3546</color>
+    <color name="black_main_50">#802F3546</color>
+
+    // tab friend
+    <color name="tab_selected_friend">#1e232f</color>
+    <color name="tab_unselected_friend">#801e232f</color>
+    <color name="text_name_friend">#2f3546</color>
+    <color name="text_last_message_friend">#737a8f</color>
+    <color name="text_last_message_friend_unread">#2f3546</color>
+    <color name="time_ago_message_friend">#adb1bb</color>
+    <color name="bg_noti_unread">#1b8af2</color>
+    <color name="text_pending">#2f3546</color>
+    <color name="note_message_pending">#5c6377</color>
+
+    // chat
+    <color name="text_friend_send">#0a0f13</color>
+    <color name="text_title_product_chat">#0a0f13</color>
+    <color name="text_content_product_chat">#800a0f13</color>
+    <color name="text_send_in_edit_text">#1e232f</color>
+    <color name="text_hint_send_in_edit_text">#401e232f</color>
+    <color name="bg_message_send">#2adb92</color>
+
+    // notification
+    <color name="title_notification">#80002f4f</color>
+    <color name="text_see_all_notification">#1b8af2</color>
+    <color name="notification_button_accept">#2adb92</color>
+    <color name="text_button_denied">#5c6377</color>
+    <color name="notification_title_name">#1e232f</color>
+    <color name="notification_time_ago">#8f9197</color>
+    <color name="bg_notification_unread">#f8fcff</color>
+
+    //product
+    <color name="button_next_create_product">#2ADB92</color>
+    <color name="text_title_product_product">#1e232f</color>
+    <color name="text_color_number_product">#2f3546</color>
+    <color name="text_color_blue">#1b8af2</color>
+    <color name="text_choose_image">#2F3546</color>
+    <color name="text_note_choose_image">#ADB1BB</color>
+    <color name="text_image_selected">#5C6377</color>
+    <color name="text_hint_input_create_product">#ADB1BB</color>
+    <color name="text_input_create_product">#1E232F</color>
+    <color name="text_title_properties">#5C6377</color>
+    <color name="text_note_owner">#8F9197</color>
+    <color name="border_dash_add_private_info">#EAEBEE</color>
+    <color name="text_end_create_product">#2F3546</color>
+    <color name="text_des_create_product">#1E232F</color>
+    <color name="text_hint_des_create_product">#401E232F</color>
+
+    //detail product
+    <color name="tag_product">#1B8AF2</color>
+    <color name="title_name_product">#1E232F</color>
+    <color name="status_product">#805C6377</color>
+    <color name="price_product">#E21063</color>
+    <color name="text_tab_unselected_product">#805C6377</color>
+    <color name="text_tab_selected_product">#2ADB92</color>
+    <color name="dot_indicator_select">#2ADB92</color>
+    <color name="dot_indicator_not_select">#80ffffff</color>
+    <color name="title_properties_detail_product">#5C6377</color>
+    <color name="name_property">#1E232F</color>
+    <color name="text_button_like_share_comment">#2F3546</color>
+    <color name="text_over_like_share_comment">#8F9197</color>
+    <color name="text_add_hint_comment">#ADB1BB</color>
+    <color name="price_private">#FCA12A</color>
+    <color name="name_comment">#D92F3546</color>
+    <color name="name_properties">#1E232F</color>
+    <color name="value_properties">#1E232F</color>
+    <color name="text_comment">#1E232F</color>
+    <color name="text_note_comment">#801E232F</color>
+    <color name="text_reply_comment">#ADB1BB</color>
+
+    //note
+    <color name="text_month_note">#ADB1BB</color>
+    <color name="text_day_note">#BF5C6377</color>
+    <color name="line_note">#D1D9DF</color>
+    <color name="text_title_note">#2F3546</color>
+    <color name="text_content_note">#5C6377</color>
+    <color name="border_time_note">#1B8AF2</color>
+    <color name="border_time_note_title">#2ADB92</color>
+
+    //preview image
+    <color name="bg_preview_image">#1D222E</color>
+
+    //social
+    <color name="text_dialog_post_social">#2F3546</color>
+    <color name="text_add_share_with_friend">#8F9197</color>
+    <color name="name_user_social">#2F3546</color>
+    <color name="time_ago_social">#ADB1BB</color>
+    <color name="name_product_social">#1E232F</color>
+    <color name="content_product_social">#DF2F3546</color>
+    <color name="price_social">#E21063</color>
+    <color name="text_over_like_share_comment_social">#8F9197</color>
+    <color name="text_button_like_share_comment_social">#2F3546</color>
+    <color name="text_add_comment_social">#ADB1BB</color>
+
+    //menu left
+    <color name="name_user_menu_left">#1E232F</color>
+    <color name="text_status_use">#662F3546</color>
+    <color name="text_calendar_menu_left">#5C6377</color>
+    <color name="text_view_all_calendar_menu_left">#1B8AF2</color>
+    <color name="text_add_note_menu_left">#1B8AF2</color>
+    <color name="text_info_private_menu_left">#2F3546</color>
+    <color name="text_content_note_menu_left">#1E232F</color>
+
+    //edit product
+    <color name="text_title_edit_product">#5C6377</color>
+    <color name="text_content_edit_product">#2F3546</color>
+    <color name="text_count_image_edit_product">#5C6377</color>
+
+    //customer
+    <color name="title_customer">#1E232F</color>
+    <color name="text_title_customer">#5C6377</color>
+    <color name="text_name_customer">#2F3546</color>
+    <color name="text_name_group_customer">#1E232F</color>
+    <color name="text_manager_customer">#1B8AF2</color>
+    <color name="text_note_customer">#5C6377</color>
+    <color name="text_content_add_customer">#1E232F</color>
+    <color name="text_hint_content_add_customer">#401E232F</color>
+    <color name="add_more_field_in_add_edit_contract">#1B8AF2</color>
+
+    //detail customer
+    <color name="text_name_detail_customer">#1E232F</color>
+    <color name="button_action_in_detail_customer">#1B8AF2</color>
+    <color name="text_title_info_customer">#5C6377</color>
+    <color name="text_info_customer">#1E232F</color>
+    <color name="text_hint_info_customer">#401E232F</color>
+
+    //personal page
+    <color name="text_name_personal">#1E232F</color>
+    <color name="text_name_option">#2F3546</color>
+    <color name="text_dialog_black">#2F3546</color>
+    <color name="text_dialog_delete">#F63E4D</color>
+    <color name="text_green_personal">#2ADB92</color>
+    <color name="text_tab_information">#5C6377</color>
+
+    //edit information
+    <color name="text_title_edit_information">#5C6377</color>
+    <color name="text_content_edit_information">#1E232F</color>
+    <color name="text_note_edit_information">#737A8F</color>
+    <color name="text_user_information">#ADB1BB</color>
+
+    //info friend
+    <color name="text_title_information_friend">#5C6377</color>
+    <color name="text_content_information_friend">#1E232F</color>
+
+    //add note
+    <color name="text_hint_add_note">#ADB1BB</color>
+    <color name="text_add_note">#5C6377</color>
+
+    //detail project
+    <color name="text_name_detail_project">#1E232F</color>
+    <color name="text_title_detail_project">#5C6377</color>
+    <color name="text_content_detail_project">#2F3546</color>
+
+    //accept friend
+    <color name="bg_search_accept_friend">#EFEFF1</color>
+
+    //filter social
+    <color name="text_title_filter_social">#1E232F</color>
+    <color name="text_title_content_filter_social">#5C6377</color>
+    <color name="text_hint_content_filter_social">#405C6377</color>
+    <color name="text_content_filter_social">#5C6377</color>
+    <color name="text_min_max_price_filter_social">#8F9197</color>
+    <color name="text_price_range_filter_social">#2F3546</color>
+    <color name="text_btn_no_filter_filter_social">#737A8F</color>
+    <color name="text_item_job_filter_social">#8F9197</color>
+
+    //loading like facebook shimmer
+    <color name="background_shimmer">#dddddd</color>
+    <color name="background_shimmer_50">#80dddddd</color>
+
+    //note detail product
+    <color name="title_note_detail_product">#1E232F</color>
+    <color name="content_note_detail_product">#1E232F</color>
+    <color name="text_in_box_detail_product">#1B8AF2</color>
+
+</resources>

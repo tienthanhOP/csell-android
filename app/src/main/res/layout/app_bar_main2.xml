@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg_main"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    tools:mContext="csell.com.vn.csell.views.csell.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:focusable="true">
+
+        <include layout="@layout/toolbar_custom_drawer" />
+
+        <include layout="@layout/content_main2" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fabBGLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fui_transparent"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:layout_marginBottom="66dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_add_black"
+        app:backgroundTint="@color/green_main"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="8dp" />
+</android.support.design.widget.CoordinatorLayout>

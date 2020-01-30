@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opacity_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/current_version"
+                    android:textColor="@color/black_75" />
+
+                <TextView
+                    android:id="@+id/tv_ver"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1.0.5 beta"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black_75" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SF_R_16"
+                    android:textColor="@color/black_75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Having a home based business is a wonderful asset to your life. The problem still stands, when it comes time to advertise your business for a cheap cost. I know you have looked for this answer everywhere; I am here to share a few simple yet creative ways, to advertise your new home business. " />
+
+                <TextView
+                    android:textColor="@color/black_75"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="A few suggestions would be, newspapers is the one source that many people go to, when they have just opened there business. You would need to research online, for from basic home based business to business galore." />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/black_75"
+                    style="@style/SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Still stands, when it comes time to advertise your business for a cheap cost. I know you have looked for this answer everywhere." />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

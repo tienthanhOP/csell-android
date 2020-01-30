@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Yêu thích">
+        <menu>
+            <item
+                android:id="@+id/nav_favorite_products"
+                android:title="Sản phẩm quan tâm"
+                android:icon="@drawable/ic_hashtag"/>
+        </menu>
+    </item>
+
+    <item android:title="Cài đặt">
+        <menu>
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_import"
+                android:title="Log out"/>
+        </menu>
+    </item>
+
+</menu>

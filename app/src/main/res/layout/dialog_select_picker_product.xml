@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_100"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="22dp"
+            android:src="@drawable/icon_add_friend" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/SF_M_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:background="@color/white_100"
+            android:gravity="center"
+            android:text="@string/choose_product"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:background="@color/white_100"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp">
+
+        <EditText
+            android:id="@+id/edt_search"
+            style="@style/SF_M_13"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_radius_txtsearch"
+            android:cursorVisible="true"
+            android:hint="@string/search_"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:textColor="@color/dark_blue_100"
+            android:textColorHint="@color/dark_blue_25" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_rvPickerProduct"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/frame"
+        android:background="@color/white_100"
+        android:orientation="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txtNotFoundProduct"
+        style="@style/SF_M_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="@string/customer_not_found"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

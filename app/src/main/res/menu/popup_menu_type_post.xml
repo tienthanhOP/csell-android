@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_public"
+        android:icon="@drawable/ic_public_black"
+        android:title="@string/title_public" />
+    <item
+        android:id="@+id/menu_only_me"
+        android:icon="@drawable/ic_only_me"
+        android:title="@string/title_only_me" />
+</menu>

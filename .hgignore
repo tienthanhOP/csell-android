@@ -1,0 +1,12 @@
+syntax: glob
+build/*
+.DS_Store
+*.iml
+.idea/*
+.gradle/*
+local.properties
+*.apk
+*.ap_
+*.aab
+.idea/modules.xml
+app/release/*

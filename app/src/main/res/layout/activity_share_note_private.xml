@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:fragment="csell.com.vn.csell.views.product.activity.ShareNotePrivateActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_custom" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_50" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtInptError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_note_private"
+                style="@style/SF_R_16"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="start"
+                android:hint="Nội dung tin riêng tư"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:maxLines="4"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/dark_blue_100"
+                android:textColorHint="@color/dark_blue_25" />
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/edtSearch"
+            style="@style/SF_M_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/border_radius_txtsearch"
+            android:hint="@string/search_"
+            android:minHeight="38dp"
+            android:paddingHorizontal="20dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_blue_100"
+            android:textColorHint="@color/dark_blue_25" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

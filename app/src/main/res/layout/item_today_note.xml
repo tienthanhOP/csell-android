@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewNote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF6F7F9"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center_horizontal">
+
+    <View
+        android:id="@+id/line_space"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#D1D9DF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_space"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#D1D9DF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_note_time"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_access_time_blue_original" />
+
+                <TextView
+                    android:id="@+id/item_today_note_tv_time"
+                    style="@style/SF_M_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:paddingTop="2sp"
+                    android:paddingBottom="3dp"
+                    android:text="12:56"
+                    android:textColor="#8F9197"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/item_today_note_tv_content"
+                style="@style/SF_M_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingStart="4dp"
+                android:paddingEnd="6dp"
+                android:text="Chốt mua biệt Chốt mua b mua biệtChốt mua biệt"
+                android:textColor="@color/text_content_note_menu_left" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

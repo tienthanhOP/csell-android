@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="@string/dob"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_title_information_friend" />
+
+                <TextView
+                    android:id="@+id/tv_dob_friend_detail"
+                    style="@style/SF_M_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text_content_information_friend" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="@string/phone_number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_title_information_friend" />
+
+                <TextView
+                    android:id="@+id/tv_phone_friend_detail"
+                    style="@style/SF_M_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text_content_information_friend" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_phone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingVertical="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="@string/other_phone_numbers"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_title_information_friend" />
+
+                <TextView
+                    android:id="@+id/tv_phone2_customer_detail"
+                    style="@style/SF_M_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/text_content_information_friend" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="@string/email"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_title_information_friend" />
+
+                <TextView
+                    android:id="@+id/tv_email_friend_detail"
+                    style="@style/SF_M_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/text_content_information_friend" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white_100"
+                android:orientation="vertical"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:text="@string/Address"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_title_information_friend" />
+
+                <TextView
+                    android:id="@+id/tv_address_friend_detail"
+                    style="@style/SF_M_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/text_content_information_friend" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

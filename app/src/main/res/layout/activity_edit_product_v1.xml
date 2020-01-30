@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:fragment="csell.com.vn.csell.views.product.activity.EditProductActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_custom" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewStub
+                android:id="@+id/layout_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_deleted_product"
+                style="@style/SF_M_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lines="1"
+                android:minWidth="@dimen/dp_50"
+                android:minLines="1"
+                android:padding="10dp"
+                android:text="@string/delete_product"
+                fancy:fb_defaultColor="@color/white_100"
+                fancy:fb_disabledColor="@android:color/transparent"
+                fancy:fb_focusColor="#fff96c78"
+                fancy:fb_textColor="@color/red_100" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

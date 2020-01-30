@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/from_end_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="SF_R_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="5sp"
+                    android:minHeight="48dp"
+                    android:text="@string/text_done_created_product_to_csell"
+                    android:textColor="@color/text_title_product_product" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_postType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/fromNotePrivateAndFriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_line_dashed"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/SF_R_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_note_private_send_to"
+                            android:textColor="@color/text_title_product_product" />
+
+                        <TextView
+                            android:id="@+id/tv_edit_note_private"
+                            style="@style/SF_B_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="8dp"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/text_edit_note_private"
+                            android:textColor="@color/blue_main" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_persion_1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:visibility="gone"
+                                app:civ_border_color="@color/white_100"
+                                app:civ_border_width="1dp" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_persion_2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="16dp"
+                                android:visibility="gone"
+                                app:civ_border_color="@color/white_100"
+                                app:civ_border_width="1dp" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_persion_3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="32dp"
+                                android:visibility="gone"
+                                app:civ_border_color="@color/white_100"
+                                app:civ_border_width="1dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txtListFriendName"
+                            style="@style/SF_M_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingStart="4dp"
+                            android:textColor="@color/black_50" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/txtPost"
+            style="@style/SF_B_15"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/button_next_create_product"
+            android:gravity="center"
+            android:text="@string/post_product"
+            android:textAllCaps="true"
+            android:textColor="@color/white_100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/from_loadding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparant_20"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+    </LinearLayout>
+
+</RelativeLayout>

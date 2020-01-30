@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_100"
+    android:orientation="vertical"
+    tools:fragment="csell.com.vn.csell.views.customer.activity.GroupCustomerDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAddCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white_100"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_back_navigation"
+                style="@style/SF_M_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                fancy:fb_defaultColor="@android:color/transparent"
+                fancy:fb_focusColor="@color/gray_100"
+                fancy:fb_fontIconResource="@string/icon_back"
+                fancy:fb_fontIconSize="20dp"
+                fancy:fb_iconPaddingLeft="0dp"
+                fancy:fb_iconPaddingRight="4dp"
+                fancy:fb_text=""
+                fancy:fb_textColor="@color/text_name_group_customer" />
+
+            <TextView
+                android:id="@+id/custom_TitleToolbar"
+                style="@style/SF_M_20"
+                android:layout_width="259dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_name_group_customer" />
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_save_navigation"
+                    style="@style/SF_M_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    fancy:fb_defaultColor="@android:color/transparent"
+                    fancy:fb_focusColor="@color/gray_100"
+                    fancy:fb_fontIconSize="20dp"
+                    fancy:fb_iconPosition="right"
+                    fancy:fb_textColor="@color/text_name_group_customer" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_avatar"
+                            style="@style/SF_B_24"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rounded_textview"
+                            android:gravity="center"
+                            android:text="A"
+                            android:textColor="@color/white_100" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name_group"
+                            style="@style/SF_M_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:maxLines="2"
+                            android:text="Mua nhà Vinhomes"
+                            android:textColor="@color/dark_blue_100" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/btn_send_message_group"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/ripple_button"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bg_button_action_in_detail_contract"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_message_white_small" />
+
+                                <TextView
+                                    style="@style/SF_M_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/send_message_group"
+                                    android:textColor="@color/button_action_in_detail_customer" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/btn_send_email_group"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ripple_button"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bg_button_action_in_detail_contract"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_email_white" />
+
+                                <TextView
+                                    style="@style/SF_M_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/send_email_group"
+                                    android:textColor="@color/button_action_in_detail_customer" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_top"
+                android:background="@color/gray_50" />
+
+            <LinearLayout
+                android:id="@+id/layout_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/line1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_add_friend" />
+
+                    <Button
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/btn_add"
+                        style="@style/SF_M_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/add_to_group"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dark_blue_100" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/layout_add"
+                android:background="@color/gray_50" />
+
+            <RelativeLayout
+                android:id="@+id/layout_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:background="@color/white_background_100"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    style="@style/SF_B_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="16dp"
+                    android:text="@string/customers_in_this_group"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_blue_100" />
+
+                <TextView
+                    android:id="@+id/tv_number_customer"
+                    style="@style/SF_R_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="16dp"
+                    android:text=""
+                    android:textColor="@color/black_50" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list_user_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white_background_100"
+                android:paddingTop="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

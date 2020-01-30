@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+
+            <stroke android:color="@color/text_content_edit_information" android:width="1dp"/>
+
+            <corners android:radius="6dp"/>
+
+        </shape>
+    </item>
+    <item android:gravity="end|center_vertical"
+        android:right="8dp">
+        <bitmap
+            android:src="@drawable/ic_expand_more_grey_24dp"
+            android:gravity="right|center_vertical" />
+    </item></layer-list>

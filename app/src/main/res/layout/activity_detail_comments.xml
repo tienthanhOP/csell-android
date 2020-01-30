@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fui_transparent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:mContext="csell.com.vn.csell.activity.DetailCommentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white_100"
+            app:cardCornerRadius="3dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:background="@drawable/border_like_comment" />
+
+        <TextView
+            style="@style/SF_B_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:gravity="center"
+            android:text="@string/comment"
+            android:textColor="@color/text_comment" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white_background_100">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_100"
+            app:elevation="0dp"
+            app:layout_collapseMode="pin">
+
+            <TextView
+                android:id="@+id/txtRecommendComment"
+                style="@style/SF_M_12"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:maxHeight="40dp"
+                android:maxLines="2"
+                android:paddingBottom="4dp"
+                android:paddingStart="16dp"
+                android:paddingTop="4dp"
+                android:text="@string/text_show_comment_of_friend"
+                android:textColor="@color/text_note_comment"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_loadmore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_100" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/from_replyComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_100"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/txtReplyComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trả lời tới Nguyễn Văn A" />
+
+            <ImageView
+                android:id="@+id/img_close_reply"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_action_close" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white_100"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_comment_content"
+            style="@style/SF_R_13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:completionThreshold="2"
+            android:paddingRight="16dp"
+            android:hint="@string/write_comment_"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingStart="16dp">
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_send_comment"
+            android:layout_width="50dp"
+            android:padding="6dp"
+            android:src="@drawable/icon_send_message"
+            android:layout_height="match_parent"
+            android:background="@color/white_100"/>
+    </LinearLayout>
+
+</LinearLayout>

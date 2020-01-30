@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:mContext="csell.com.vn.csell.views.friend.activity.FindFriendsActivity">
+
+    <include layout="@layout/toolbar_custom_drawer" />
+
+    <TextView
+        android:id="@+id/txt_not_found"
+        style="@style/SF_M_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_grey"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingVertical="@dimen/activity_horizontal_margin"
+        android:text="@string/text_error_find_friend"
+        android:textColor="@color/red_100"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_background_100">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_findfriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_loadMore"
+                style="@style/SF_M_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_btn_login"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="8dp"
+                android:text="@string/add"
+                android:textColor="@color/white_100"
+                android:visibility="gone"
+                fancy:ignore="HardcodedText" />
+
+            <ProgressBar
+                android:id="@+id/progress_loadmore_friend"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

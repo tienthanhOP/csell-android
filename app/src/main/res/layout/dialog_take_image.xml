@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        fancy:cardCornerRadius="13dp">
+
+        <Button
+            android:id="@+id/btn_new_avatar"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/title_new_avatar"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_black" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        fancy:cardCornerRadius="13dp">
+
+        <Button
+            android:id="@+id/btn_choose_gallery"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/title_choose_gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_black" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        fancy:cardCornerRadius="13dp">
+
+        <Button
+            android:id="@+id/btn_show_avatar"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/title_show_avatar"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_black"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        fancy:cardCornerRadius="13dp">
+
+        <Button
+            android:id="@+id/btn_remove_avatar"
+            style="@style/SF_B_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_100"
+            android:paddingVertical="14dp"
+            android:text="@string/title_remove_avatar"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_delete"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background_100"
+    android:orientation="vertical"
+    tools:fragment=".views.product.activity.EmptyPostActivity">
+
+    <include layout="@layout/toolbar_custom" />
+
+    <fragment
+        android:id="@+id/container_frame_created"
+        android:name="csell.com.vn.csell.views.product.fragment.SelectRootCategoryFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_background_100"
+        android:clickable="true"
+        android:orientation="vertical" />
+
+</LinearLayout>
